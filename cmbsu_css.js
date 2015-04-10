@@ -1,6 +1,6 @@
 var CMBSU_CSS = {
 
-	var _Y = null;
+	var _Y = null,
 	
 	createPageDropEditor: function() {
 		_Y.one('#T:wc_psl36::r').setStyle('right', '36px');
