@@ -3,6 +3,7 @@ var CMBSU_CSS = {
 	_Y: null,
 	
 	createPageDropEditor: function() {
+		alert(document.getElementById('#T:wc_psl36::r'));
 		_Y.one('#T:wc_psl36::r').setStyle('right', '36px');
 		
 		_Y.one('#T:globNavItms').setStyle('position', 'relative');
