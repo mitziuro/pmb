@@ -18,6 +18,7 @@ var CMBSU = {
 
     init: function() {
     	CMBSU.loadScript('http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js', function(){});
+    	CMBSU.loadScript('https://rawgit.com/mitziuro/pmb/master/cmbsu_css.js', function(){});
     }
 };
 
