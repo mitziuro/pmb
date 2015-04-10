@@ -22,6 +22,4 @@ var CMBSU = {
     }
 };
 
-window.onload = function () {
-	CMBSU.init();
-}
+CMBSU.init();
