@@ -23,6 +23,5 @@ var CMBSU = {
 };
 
 window.onload = function () {
-	alert(2);
 	CMBSU.init();
 }

@@ -13,8 +13,10 @@ var CMBSU_CSS = {
     init: function() {
     	
     	YUI().use('node', function(Y) {
-    		_Y =Y;
-    		CMBSU_CSS.createPageDropEditor();
+    		_Y = Y;
+    		_Y.on('domready', function () {
+    			CMBSU_CSS.createPageDropEditor();
+    		});
     	});
     	
     }
