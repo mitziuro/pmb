@@ -1,16 +1,19 @@
 var CMBSU_CSS = {
 
+	var _Y = null;
+	
 	createPageDropEditor: function() {
-		Y.one('#T:wc_psl36::r').setStyle('right', '36px');
+		_Y.one('#T:wc_psl36::r').setStyle('right', '36px');
 		
-		Y.one('#T:globNavItms').setStyle('position', 'relative');
-		Y.one('#T:globNavItms').setStyle('left', '-1px');
+		_Y.one('#T:globNavItms').setStyle('position', 'relative');
+		_Y.one('#T:globNavItms').setStyle('left', '-1px');
 		
 	},
 
     init: function() {
     	
     	YUI().use('node', function(Y) {
+    		_Y =Y;
     		CMBSU_CSS.createPageDropEditor();
     	});
     	
