@@ -39,7 +39,7 @@ var CMBSU_CSS = {
 
     init: function() {
     	
-    	YUI().use('node', 'anim', function(Y) {
+    	YUI().use('node', 'anim', 'event-focus', function(Y) {
     		_Y = Y;
 
     		_Y.on('domready', function () {
