@@ -17,12 +17,11 @@ var CMBSU = {
 	},
 
     init: function() {
-    	alert(document.getElementById('#T:wc_psl36::r'));
     	CMBSU.loadScript('http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js', function(){});
     	CMBSU.loadScript('https://rawgit.com/mitziuro/pmb/master/cmbsu_css.js', function(){});
     }
 };
 
-alert(document.getElementById('#T:wc_psl36::r'));
-CMBSU.init();
+setTimeout("CMBSU.init();", 3000);
+
 

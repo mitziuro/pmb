@@ -23,4 +23,3 @@ var CMBSU_CSS = {
     }
 };
 
-CMBSU_CSS.init();
