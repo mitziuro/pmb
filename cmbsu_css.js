@@ -33,6 +33,25 @@ var CMBSU_CSS = {
 
 			anim.run();
 		});
+		
+		node.on('blur', new function(e) {
+			
+			var anim = new _Y.Anim({
+		        node: node,
+		        from: {
+		            width: '500px'
+		        },
+
+		        to: {
+		        	 width: '170px'
+		        },
+
+		        duration: 5,
+		        iterations: 1
+		    });
+
+			anim.run();
+		});
 
 		
 	},
