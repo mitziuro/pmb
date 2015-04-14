@@ -16,7 +16,7 @@ var CMBSU_CSS = {
 		var node = _Y.one(document.getElementById('T:searchbox:srchFrm:siSrTx::content'));
 		
 		node.on('focus', new function(e) {
-			
+			alert(e.target);
 			var anim = new _Y.Anim({
 		        node: node,
 		        from: {
