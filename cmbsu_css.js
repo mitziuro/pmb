@@ -13,9 +13,10 @@ var CMBSU_CSS = {
 	},
 
     init: function() {
-    	
+    	alert(Y.one('#T:wc_psl36::r'));
     	YUI().use('node', function(Y) {
     		_Y = Y;
+    		alert(Y.one('#T:wc_psl36::r'));
     		_Y.on('domready', function () {
     			CMBSU_CSS.createPageDropEditor();
     		});
