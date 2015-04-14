@@ -13,6 +13,16 @@ var CMBSU_CSS = {
 		
 	},
 	
+	createScroll: function() {
+
+		//_Y.one(document.getElementById('T:wc_psl1::t')).setStyle('position', 'relative');
+		//_Y.one(document.getElementById('T:wc_psl1::c')).setStyle('position', 'relative');
+		//_Y.one(document.getElementById('T:wc_psl1::c')).setStyle('height', '100%');
+		//_Y.one(document.getElementById('T:wc_psl1::c')).setStyle('top', '0px');
+		//_Y.one(document.getElementById('T:wc_psl1::c')).addClass('x6969');
+		//_Y.one(document.getElementById('T:wc_psl1::b')).setStyle('position', 'relative');
+	},
+	
 	createSliderSearch: function() {
 		var node = _Y.one(document.getElementById('T:searchbox:srchFrm:siSrTx::content'));
 		
@@ -79,6 +89,7 @@ var CMBSU_CSS = {
     		_Y.on('domready', function () {
     			CMBSU_CSS.createPageDropEditor();
     			CMBSU_CSS.createSliderSearch();
+    			CMBSU_CSS.createScroll();
     		});
     	});
     	
