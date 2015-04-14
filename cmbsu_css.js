@@ -27,7 +27,7 @@ var CMBSU_CSS = {
 		        	 width: '500px'
 		        },
 
-		        duration: 1,
+		        duration: 5,
 		        iterations: 1
 		    });
 
