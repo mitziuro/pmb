@@ -3,12 +3,12 @@ var CMBSU_CSS = {
 	_Y: null,
 	
 	createPageDropEditor: function() {
-		alert(_Y.one('#T:wc_psl36::r'));
-		alert(_Y.one('T:wc_psl36::r'));
-		_Y.one('#T:wc_psl36::r').setStyle('right', '36px');
+		//alert(_Y.one(document'#T:wc_psl36::r'));
+		//alert(_Y.one('T:wc_psl36::r'));
+		_Y.one(document.getElementById('#T:wc_psl36::r')).setStyle('right', '36px');
 		
-		_Y.one('#T:globNavItms').setStyle('position', 'relative');
-		_Y.one('#T:globNavItms').setStyle('left', '-1px');
+		_Y.one(document.getElementById('#T:globNavItms')).setStyle('position', 'relative');
+		_Y.one(document.getElementById('#T:globNavItms')).setStyle('left', '-1px');
 		
 	},
 
@@ -16,7 +16,7 @@ var CMBSU_CSS = {
     	
     	YUI().use('node', function(Y) {
     		_Y = Y;
-    		alert(Y.one('#T:wc_psl36::r'));
+
     		_Y.on('domready', function () {
     			CMBSU_CSS.createPageDropEditor();
     		});
