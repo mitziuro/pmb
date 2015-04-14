@@ -6,6 +6,7 @@ var CMBSU_CSS = {
 
 		_Y.one(document.getElementById('T:wc_psl36::r')).setStyle('right', '36px');
 		_Y.one(document.getElementById('T:wc_psl36::r')).setStyle('width', '300px');
+		_Y.one(document.getElementById('T:wc_psl36::r')).setStyle('top', '-2px');
 		
 		_Y.one(document.getElementById('T:globNavItms')).setStyle('position', 'relative');
 		_Y.one(document.getElementById('T:globNavItms')).setStyle('left', '-1px');
