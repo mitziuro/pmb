@@ -5,7 +5,7 @@ var CMBSU_CSS = {
 	createPageDropEditor: function() {
 
 		_Y.one(document.getElementById('T:wc_psl36::r')).setStyle('right', '36px');
-		_Y.one(document.getElementById('T:wc_psl36::r')).setStyle('width', '500px');
+		_Y.one(document.getElementById('T:wc_psl36::r')).setStyle('width', '300px');
 		
 		_Y.one(document.getElementById('T:globNavItms')).setStyle('position', 'relative');
 		_Y.one(document.getElementById('T:globNavItms')).setStyle('left', '-1px');
@@ -13,46 +13,59 @@ var CMBSU_CSS = {
 	},
 	
 	createSliderSearch: function() {
-
 		var node = _Y.one(document.getElementById('T:searchbox:srchFrm:siSrTx::content'));
 		
-		node.on('focus', new function(e) {
-		
+		node.set('value', 'Cauta...');
+		node.setStyle('font-style', 'italic');
+					
+		document.getElementById('T:searchbox:srchFrm:siSrTx::content').onfocus =  function() {
 			var anim = new _Y.Anim({
-		        node: node,
-		        from: {
-		            width: '170px'
-		        },
+					node: node,
+					from: {
+						width: '120px'
+					},
 
-		        to: {
-		        	 width: '500px'
-		        },
+					to: {
+						 width: '265px'
+					},
 
-		        duration: 5,
-		        iterations: 1
-		    });
+					duration: 1,
+					iterations: 1
+				});
 
-			anim.run();
-		});
+				anim.run();
+				
+				if(node.getStyle('font-style') == 'italic') {
+					node.set('value', '');
+				}
+				
+				node.setStyle('font-style', 'normal');
+		};
 		
-		node.on('blur', new function(e) {
-			
+		
+		document.getElementById('T:searchbox:srchFrm:siSrTx::content').onblur =  function() {
 			var anim = new _Y.Anim({
-		        node: node,
-		        from: {
-		            width: '500px'
-		        },
+					node: node,
+					from: {
+						width: '265px'
+					},
 
-		        to: {
-		        	 width: '170px'
-		        },
+					to: {
+						 width: '120px'
+					},
 
-		        duration: 5,
-		        iterations: 1
-		    });
+					duration: 1,
+					iterations: 1
+				});
 
-			anim.run();
-		});
+				anim.run();
+				
+				if(node.get('value') == '') {
+					node.set('value', 'Cauta...');
+					node.setStyle('font-style', 'italic');
+				}
+				
+		};
 
 		
 	},
