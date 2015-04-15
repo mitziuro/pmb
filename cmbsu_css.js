@@ -25,6 +25,7 @@ var CMBSU_CSS = {
 	
 	createSearch: function() {
 		_Y.one(document.getElementById('T:searchbox:srchFrm:goBtn')).setStyle('background-image', 'url(https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/128/search.png)');
+		_Y.one(document.getElementById('T:searchbox:srchFrm:goBtn')).setStyle('background-size', 'contain');
 	},
 	
 	createSliderSearch: function() {
@@ -93,7 +94,7 @@ var CMBSU_CSS = {
     		_Y.on('domready', function () {
     			CMBSU_CSS.createPageDropEditor();
     			CMBSU_CSS.createSliderSearch();
-    			CMBSU_CSS.createSearch();
+    		//	CMBSU_CSS.createSearch();
     			CMBSU_CSS.createScroll();
     		});
     	});
