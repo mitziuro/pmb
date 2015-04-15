@@ -24,7 +24,7 @@ var CMBSU_CSS = {
 	},
 	
 	createSearch: function() {
-		_Y.one(document.getElementById('T:searchbox:srchFrm:goBtn')).setStyle('background-image', 'url(https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/128/search.png) !important');
+		_Y.one(document.getElementById('T:searchbox:srchFrm:goBtn')).setStyle('background-image', 'url(https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/128/search.png)');
 	},
 	
 	createSliderSearch: function() {
