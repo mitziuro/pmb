@@ -23,6 +23,10 @@ var CMBSU_CSS = {
 		//_Y.one(document.getElementById('T:wc_psl1::b')).setStyle('position', 'relative');
 	},
 	
+	createSearch: function() {
+		_Y.one(document.getElementById('T:searchbox:srchFrm:goBtn')).setStyle('background-image', 'url(https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/128/search.png) !important');
+	},
+	
 	createSliderSearch: function() {
 		var node = _Y.one(document.getElementById('T:searchbox:srchFrm:siSrTx::content'));
 		
@@ -89,6 +93,7 @@ var CMBSU_CSS = {
     		_Y.on('domready', function () {
     			CMBSU_CSS.createPageDropEditor();
     			CMBSU_CSS.createSliderSearch();
+    			CMBSU_CSS.createSearch();
     			CMBSU_CSS.createScroll();
     		});
     	});
