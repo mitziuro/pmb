@@ -29,7 +29,7 @@ var CMBSU_CSS = {
 	},
 	
 	createNameLogo: function() {
-		document.getElementById('iframe_name').innerHTML = '<iframe src="/LogoApp-ViewController-context-root/faces/logo.jspx" height="20px" width="20px;"></iframe>';
+		document.getElementById('iframe_name').innerHTML = '<iframe src="/LogoApp-ViewController-context-root/faces/logo.jspx" height="15px" width="300px;"></iframe>';
 	},
 	
 	createSliderSearch: function() {
