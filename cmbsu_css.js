@@ -28,6 +28,10 @@ var CMBSU_CSS = {
 		_Y.one(document.getElementById('T:searchbox:srchFrm:goBtn')).setStyle('background-size', 'contain');
 	},
 	
+	createNameLogo: function() {
+		document.getElementById('iframe_name').innerHTML = '<iframe src="/LogoApp-ViewController-context-root/faces/logo.jspx" height="20px" width="20px;"></iframe>';
+	},
+	
 	createSliderSearch: function() {
 		var node = _Y.one(document.getElementById('T:searchbox:srchFrm:siSrTx::content'));
 		
@@ -92,10 +96,12 @@ var CMBSU_CSS = {
     		_Y = Y;
 
     		_Y.on('domready', function () {
+    			CMBSU_CSS.createNameLogo();
     			CMBSU_CSS.createPageDropEditor();
     			CMBSU_CSS.createSliderSearch();
     		//	CMBSU_CSS.createSearch();
     			CMBSU_CSS.createScroll();
+    			
     		});
     	});
     	
