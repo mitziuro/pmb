@@ -87,10 +87,15 @@ var CMBSU_CSS = {
 	},
 	
 	createLayout: function() {
-		//document.getElementById('T:pcl1::c').appendChild(document.getElementById('T:wc_psl1::b'));
-		//document.getElementById('T:hm_pnc2::content').appendChild(document.getElementById('T:wc_psl1::b'));
+		
+		//content
+		document.getElementById('T:hm_pnc2').style.padding = ''
+		
+		
+		//footer
 		var div = document.createElement("div");
-		document.getElementById('T:hm_pnc2::content').appendChild(div);
+		//document.getElementById('T:hm_pnc2::content').appendChild(div);
+		document.getElementById('T:pgl1').appendChild(div);
 		
 		div.innerHTML = '<div class="footer_div"> \
 		<table summary="" class="footer_table x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
