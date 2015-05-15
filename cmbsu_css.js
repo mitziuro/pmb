@@ -100,6 +100,9 @@ var CMBSU_CSS = {
 		
 		document.getElementById('T:wc_psl1::c').style.top  = '-34px'; 
 		
+		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:gtbppgl39'), document.getElementById('T:wc_psl3::t'));
+		
+		
 		//content
 		document.getElementById('T:hm_pnc2').style.padding = '';
 		
