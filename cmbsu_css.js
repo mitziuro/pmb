@@ -85,6 +85,10 @@ var CMBSU_CSS = {
 
 		
 	},
+	
+	createLayout: function() {
+		document.getElementById('T:wc_psl1::c').appendChild(document.getElementById('T:appftpsl1'));
+	},
 
     init: function() {
     	
@@ -92,10 +96,12 @@ var CMBSU_CSS = {
     		_Y = Y;
 
     		_Y.on('domready', function () {
+    			CMBSU_CSS.createLayout();
     			CMBSU_CSS.createPageDropEditor();
     			CMBSU_CSS.createSliderSearch();
     		//	CMBSU_CSS.createSearch();
     			CMBSU_CSS.createScroll();
+    			
     			
     		});
     	});
