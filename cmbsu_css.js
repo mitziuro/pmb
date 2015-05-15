@@ -88,11 +88,6 @@ var CMBSU_CSS = {
 	
 	createLayout: function() {
 		
-		document.getElementById('T:globalContainer').style.position = 'absolute';
-		document.getElementById('T:globalContainer').style.top = '10px';
-		
-		
-		
 		//top
 		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl1::t'), document.getElementById('T:pgl1').firstChild);    
 		document.getElementById('T:pgl2').style.paddingTop = '100px';
