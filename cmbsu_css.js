@@ -89,11 +89,15 @@ var CMBSU_CSS = {
 	createLayout: function() {
 		//top
 		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl1::t'), document.getElementById('T:pgl1').firstChild);    
-		document.getElementById('T:pgl2').style.paddingTop = '200px';
+		document.getElementById('T:pgl2').style.paddingTop = '100px';
 		
 		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl3::t'), document.getElementById('T:wc_psl1::t'));
-		document.getElementById('T:wc_psl3::t').style.top = '71px';
+		document.getElementById('T:wc_psl3::t').style.top = '65px';
 		document.getElementById('T:wc_psl3::t').className += " div_menu";
+		document.getElementById('T:mb1::oc').style.position = 'relative';
+		document.getElementById('T:mb1::oc').style.top = '2px';
+		
+		document.getElementById('T:wc_psl1::c').style.top  = '-34px'; 
 		
 		//content
 		document.getElementById('T:hm_pnc2').style.padding = '';
