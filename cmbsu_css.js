@@ -106,6 +106,7 @@ var CMBSU_CSS = {
 		//content
 		document.getElementById('T:hm_pnc2').style.padding = '';
 		
+		document.getElementById('T:contentBody').style.bottom = '-1px';
 		
 		//searchbox
 		document.getElementById('T:searchbox').style.position = 'relative';
