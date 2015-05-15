@@ -95,7 +95,7 @@ var CMBSU_CSS = {
 		//footer
 		var div = document.createElement("div");
 		//document.getElementById('T:hm_pnc2::content').appendChild(div);
-		document.getElementById('T:pgl1').appendChild(div);
+		document.getElementById('T:pcl1').appendChild(div);
 		
 		div.innerHTML = '<div class="footer_div"> \
 		<table summary="" class="footer_table x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
