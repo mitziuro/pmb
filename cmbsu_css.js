@@ -103,6 +103,11 @@ var CMBSU_CSS = {
 		document.getElementById('T:hm_pnc2').style.padding = '';
 		
 		
+		//searchbox
+		document.getElementById('T:searchbox').style.position = 'relative';
+		document.getElementById('T:searchbox').style.top = '2px';
+		
+		
 		//footer
 		var div = document.createElement("div");
 		//document.getElementById('T:hm_pnc2::content').appendChild(div);
