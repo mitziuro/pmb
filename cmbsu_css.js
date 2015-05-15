@@ -87,9 +87,11 @@ var CMBSU_CSS = {
 	},
 	
 	createLayout: function() {
+		//top
+		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl1::t'), document.getElementById('T:pgl1').firstChild);    
 		
 		//content
-		document.getElementById('T:hm_pnc2').style.padding = ''
+		document.getElementById('T:hm_pnc2').style.padding = '';
 		
 		
 		//footer
