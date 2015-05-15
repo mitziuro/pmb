@@ -92,7 +92,7 @@ var CMBSU_CSS = {
 		var div = document.createElement("div");
 		document.getElementById('T:hm_pnc2::content').appendChild(div);
 		
-		div.innerHTML = '\
+		div.innerHTML = '<div class="footer_div"> \
 		<table summary="" class="footer_table x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
 	        <tr>\
 	            <td>\
@@ -108,7 +108,7 @@ var CMBSU_CSS = {
 	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla-isumb.png"/>\
 	            </td>\
 	        </tr>\
-	   </table>';
+	   </table></div>';
 		
 	},
 
