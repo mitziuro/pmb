@@ -93,6 +93,7 @@ var CMBSU_CSS = {
 		
 		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl3::t'), document.getElementById('T:wc_psl1::t'));
 		document.getElementById('T:wc_psl3::t').style.top = '71px';
+		document.getElementById('T:wc_psl3::t').className += " div_menu";
 		
 		//content
 		document.getElementById('T:hm_pnc2').style.padding = '';
