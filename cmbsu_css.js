@@ -89,23 +89,26 @@ var CMBSU_CSS = {
 	createLayout: function() {
 		//document.getElementById('T:pcl1::c').appendChild(document.getElementById('T:wc_psl1::b'));
 		//document.getElementById('T:hm_pnc2::content').appendChild(document.getElementById('T:wc_psl1::b'));
-		document.getElementById('T:hm_pnc2::content').innerHTML += '\
-		<table summary="" class="x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
-        <tr>\
-            <td>\
-                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
-            </td>\
-            <td>\
-                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
-            </td>\
-            <td>\
-                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/SMURD_logo.png"/>\
-            </td>\
-            <td>\
-                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla-isumb.png"/>\
-            </td>\
-        </tr>\
-   </table>';
+		var div = document.createElement("div");
+		document.getElementById('T:hm_pnc2::content').appendChild(div);
+		
+		div.innerHTML = '\
+		<table summary="" class="footer_table x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
+	        <tr>\
+	            <td>\
+	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
+	            </td>\
+	            <td>\
+	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
+	            </td>\
+	            <td>\
+	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/SMURD_logo.png"/>\
+	            </td>\
+	            <td>\
+	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla-isumb.png"/>\
+	            </td>\
+	        </tr>\
+	   </table>';
 		
 	},
 
