@@ -88,7 +88,7 @@ var CMBSU_CSS = {
 	
 	createLayout: function() {
 		//document.getElementById('T:wc_psl3::c').appendChild(document.getElementById('T:wc_psl1::b'));
-		document.getElementById('T:pcl1::c').appendChild(document.getElementById('T:wc_psl1::b'));
+		document.getElementById('T:pgl1').appendChild(document.getElementById('T:wc_psl1::b'));
 		
 	},
 
