@@ -107,10 +107,8 @@ var CMBSU_CSS = {
 		document.getElementById('T:searchbox').style.position = 'relative';
 		document.getElementById('T:searchbox').style.top = '2px';
 		
-		
 		//footer
 		var div = document.createElement("div");
-		//document.getElementById('T:hm_pnc2::content').appendChild(div);
 		document.getElementById('T:pgl1').appendChild(div);
 		
 		div.innerHTML = '<div class="footer_div"> \
@@ -131,8 +129,15 @@ var CMBSU_CSS = {
 	        </tr>\
 	   </table></div>';
 		
+		
+		
+		
 	},
 
+	createLayoutIE: function() {
+		document.getElementById('T:pcust2::content').style.overflow = 'hidden';
+	},
+	
     init: function() {
     	
     	YUI().use('node', 'anim', 'event-focus', function(Y) {
@@ -140,6 +145,7 @@ var CMBSU_CSS = {
 
     		_Y.on('domready', function () {
     			CMBSU_CSS.createLayout();
+    			CMBSU_CSS.createLayoutIE();
     			CMBSU_CSS.createPageDropEditor();
     			CMBSU_CSS.createSliderSearch();
     		//	CMBSU_CSS.createSearch();
