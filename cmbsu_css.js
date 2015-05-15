@@ -90,7 +90,7 @@ var CMBSU_CSS = {
 		
 		//top
 		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl1::t'), document.getElementById('T:pgl1').firstChild);    
-		document.getElementById('T:pgl2').style.paddingTop = '100px';
+		document.getElementById('T:pgl2').style.paddingTop = '114px';
 		
 		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl3::t'), document.getElementById('T:wc_psl1::t'));
 		document.getElementById('T:wc_psl3::t').style.top = '65px';
@@ -98,10 +98,10 @@ var CMBSU_CSS = {
 		document.getElementById('T:mb1::oc').style.position = 'relative';
 		document.getElementById('T:mb1::oc').style.top = '2px';
 		
-		document.getElementById('T:wc_psl1::c').style.top  = '-34px'; 
+		document.getElementById('T:wc_psl1::c').style.top  = '-62px'; 
 		
 		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl369'), document.getElementById('T:wc_psl3::t'));
-		
+		document.getElementById('T:wc_psl369').style.top = '95px';
 		
 		//content
 		document.getElementById('T:hm_pnc2').style.padding = '';
