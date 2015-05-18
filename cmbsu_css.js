@@ -161,6 +161,9 @@ var CMBSU_CSS = {
 		
 		
 		
+		document.getElementById('f1').insertBefore(document.getElementById('T:pgl1'), document.getElementById('f1').firstChild);    
+		document.getElementById('f1').removeChild(document.getElementById('T:globalContainer'));
+		
 		
 	},
 	
