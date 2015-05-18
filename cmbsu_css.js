@@ -89,7 +89,8 @@ var CMBSU_CSS = {
 	createLayout: function() {
 		
 		//top
-		document.getElementById('T:globalContainer').style.paddingBottom = '14px'; 
+		document.getElementById('T:globalContainer').style.paddingBottom = '11px'; 
+		document.getElementById('T:globalContainer').style.overflow = 'hidden'; 
 		
 		
 		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl1::t'), document.getElementById('T:pgl1').firstChild);    
