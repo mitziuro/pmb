@@ -126,10 +126,14 @@ var CMBSU_CSS = {
 		<table summary="" class="footer_table x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
 	        <tr>\
 	            <td>\
-	                <img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
-			  		<br/>\
-					<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
-	            </td>\
+					<a href="http://pmb.ro">\
+	                	<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
+			  		</a>\
+					<br/>\
+					<a href="http://www.smurd.ro">\
+						<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
+	            	</a>\
+				</td>\
 	            <td style="vertical-align: top;">\
 	              \<div class="footer_text">\
 						<div class="footer_div_">\
