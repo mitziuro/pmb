@@ -163,13 +163,13 @@ var CMBSU_CSS = {
 		
 		
 	},
-
+	
 	createLayoutIE: function() {
 		document.getElementById('T:pcust2::content').style.overflow = 'hidden';
 	},
 	
     init: function() {
-    	
+   
     	YUI().use('node', 'anim', 'event-focus', function(Y) {
     		_Y = Y;
 
@@ -184,6 +184,8 @@ var CMBSU_CSS = {
     			
     		});
     	});
+    	
+     	CMBSU_ALERT.init();
     	
     }
 };
