@@ -8,7 +8,7 @@ var CMBSU_ALERT = {
 		alert(3);
 		div.className= "alert_div";
 		alert(4);
-		document.getElementById('T:pgl1').insertBefore(div, document.getElementById('T:pcl1').firstChild);    
+		document.getElementById('T:pcl1').insertBefore(div, document.getElementById('T:pcl1').firstChild);    
 		alert(5);
 	},
 	
