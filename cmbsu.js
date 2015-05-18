@@ -21,6 +21,6 @@ var CMBSU = {
     	CMBSU.loadScript('https://rawgit.com/mitziuro/pmb/master/cmbsu_css.js', function(){});
     }
 };
-
+alert(5);
 CMBSU.init();
 
