@@ -116,6 +116,8 @@ var CMBSU_CSS = {
 		var div = document.createElement("div");
 		document.getElementById('T:pgl1').appendChild(div);
 		
+		document.getElementById('T:pgl2').style.minHeight= '768px';
+		
 		div.innerHTML = '<div class="footer_div"> \
 		<table summary="" class="footer_table x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
 	        <tr>\
