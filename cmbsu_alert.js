@@ -6,8 +6,8 @@ var CMBSU_ALERT = {
 		div.innerHTML += '<div class="alert_content">Alerta</div>';
 		div.className= "alert_div";
 		div.style.position = 'absolute';
-		//document.getElementById('T:pcl1::c').insertBefore(div, document.getElementById('T:pcl1::c').firstChild);   
-		document.getElementById('T:wcCont::c').insertBefore(div, document.getElementById('T:wcCont::c').firstChild);    
+		document.getElementById('T:pcl1::c').insertBefore(div, document.getElementById('T:pcl1::c').firstChild);   
+		//document.getElementById('T:wcCont::c').insertBefore(div, document.getElementById('T:wcCont::c').firstChild);    
 		
 	},
 	
