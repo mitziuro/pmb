@@ -128,16 +128,16 @@ var CMBSU_CSS = {
 	            </td>\
 	            <td style="vertical-align: top;">\
 	              \<div class="footer_text">\
-						<div>\
+						<div class="footer_div">\
 							<a href="http://pmb.ro">Primaria Municipiului Bucuresti</a>\
 						</div>\
-						<div>\
+						<div class="footer_div">\
 							<a href="http://www.smurd.ro">Serviciul Mobil de Urgenta, Reanimare si Descarcerare</a> \
 						</div>\
-						<div> \
+						<div class="footer_div"> \
 							<a href="http://sabif.ro">Serviciului de Ambulanta Bucuresti-Ilfov</a>\
 						</div>\
-						<div>\
+						<div class="footer_div">\
 							<a href="http://isubucuresti.ro">Inspectoratul pentru Situatii de Urgenta "Dealul Spirii" al Municipiului Bucuresti</a> \
 						</div>\
 				</div>\
