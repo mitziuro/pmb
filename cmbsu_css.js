@@ -125,7 +125,7 @@ var CMBSU_CSS = {
 		div.innerHTML = '<div class="footer_div"> \
 		<table summary="" class="footer_table x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
 	        <tr>\
-	            <td>\
+	            <td class="footer_td">\
 					<a href="http://pmb.ro">\
 	                	<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
 			  		</a>\
