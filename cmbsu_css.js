@@ -130,7 +130,7 @@ var CMBSU_CSS = {
 	                	<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
 			  		</a>\
 					<br/>\
-					<a href="http://www.smurd.ro">\
+					<a href="http://sabif.ro">\
 						<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
 	            	</a>\
 				</td>\
@@ -151,10 +151,14 @@ var CMBSU_CSS = {
 				</div>\
 	            </td>\
 	            <td>\
-	                <img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/SMURD_logo.png"/>\
+					<a href="http://www.smurd.ro">\
+	                	<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/SMURD_logo.png"/>\
+					</a>\
 					<br/>\
-					<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla-isumb.png"/>\
-	            </td>\
+					<a href="http://isubucuresti.ro">\
+						<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla-isumb.png"/>\
+					</a>\
+				</td>\
 	        </tr>\
 	   </table></div>';
 		
