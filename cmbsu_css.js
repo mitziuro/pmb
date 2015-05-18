@@ -127,17 +127,17 @@ var CMBSU_CSS = {
 	        <tr>\
 	            <td class="footer_td">\
 					<a href="http://pmb.ro">\
-	                	<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
+	                	<img class="xjd footer_image" src="' + CMBSU_URL + 'sigla%20-%20PMB.gif"/>\
 			  		</a>\
 					<a href="http://www.smurd.ro">\
-			        	<img style="position:relative;left:15px;" class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/SMURD_logo.png"/>\
+			        	<img style="position:relative;left:15px;" class="xjd footer_image" src="' + CMBSU_URL + 'SMURD_logo.png"/>\
 					</a>\
 					<br/>\
 					<a href="http://sabif.ro">\
-						<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
+						<img class="xjd footer_image" src="' + CMBSU_URL + 'sabif-fb_inverted.png"/>\
 	            	</a>\
 						<a href="http://isubucuresti.ro">\
-						<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla-isumb.png"/>\
+						<img class="xjd footer_image" src="' + CMBSU_URL + 'sigla-isumb.png"/>\
 					</a>\
 				</td>\
 	            <td style="vertical-align: top;">\

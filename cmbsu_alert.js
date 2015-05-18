@@ -1,10 +1,19 @@
 var CMBSU_ALERT = {
 
-	writeAlert: function() {
+	writeAlert: function(type, content) {
 		var div = document.createElement("div");
-		div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="https://rawgit.com/mitziuro/pmb/master/alert-sign.gif"/></div>';
-		div.innerHTML += '<div class="alert_content">Alerta</div>';
-		div.className= "alert_div";
+		
+		if(type == 'A') {
+			div.className= "alert_div";
+			div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="' + CMBSU_URL + 'alert-sign.gif"/></div>';
+		} else if(type == 'W') {
+			div.className= "warning_div";
+			div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="' + CMBSU_URL + 'warning-sign.gif"/></div>';
+		}
+		
+		
+		div.innerHTML += '<div class="alert_content">' + content + '</div>';
+		
 		div.style.position = 'absolute';
 		document.getElementById('T:pcl1::c').insertBefore(div, document.getElementById('T:pcl1::c').firstChild);   
 		//document.getElementById('T:wcCont::c').insertBefore(div, document.getElementById('T:wcCont::c').firstChild);    
@@ -12,7 +21,7 @@ var CMBSU_ALERT = {
 	},
 	
 	init: function() {
-		CMBSU_ALERT.writeAlert();
+		CMBSU_ALERT.writeAlert('W', 'Aleeeeeeeeeerta');
 	}
     
 };
