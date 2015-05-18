@@ -123,15 +123,19 @@ var CMBSU_CSS = {
 	        <tr>\
 	            <td>\
 	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
+			  		<br/>\
+					<img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
 	            </td>\
 	            <td>\
-	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
+	              \
 	            </td>\
 	            <td>\
 	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/SMURD_logo.png"/>\
+					<br/>\
+					<img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla-isumb.png"/>\
 	            </td>\
 	            <td>\
-	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla-isumb.png"/>\
+	                \
 	            </td>\
 	        </tr>\
 	   </table></div>';
