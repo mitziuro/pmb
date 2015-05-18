@@ -129,8 +129,8 @@ var CMBSU_CSS = {
 					<a href="http://pmb.ro">\
 	                	<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
 			  		</a>\
-						<a href="http://www.smurd.ro">\
-			        	<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/SMURD_logo.png"/>\
+					<a href="http://www.smurd.ro">\
+			        	<img style="position:relative;left:15px;" class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/SMURD_logo.png"/>\
 					</a>\
 					<br/>\
 					<a href="http://sabif.ro">\
