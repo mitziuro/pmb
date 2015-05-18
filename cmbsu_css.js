@@ -122,20 +122,19 @@ var CMBSU_CSS = {
 		<table summary="" class="footer_table x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
 	        <tr>\
 	            <td>\
-	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
+	                <img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla%20-%20PMB.gif"/>\
 			  		<br/>\
-					<img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
+					<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
 	            </td>\
 	            <td>\
-	              \
+	              \<div class="footer_text">\
+						<a href="http://yahoo.com">Primaria Municipiului Bucuresti</a>\
+				</div>\
 	            </td>\
 	            <td>\
-	                <img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/SMURD_logo.png"/>\
+	                <img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/SMURD_logo.png"/>\
 					<br/>\
-					<img class="xjd" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla-isumb.png"/>\
-	            </td>\
-	            <td>\
-	                \
+					<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sigla-isumb.png"/>\
 	            </td>\
 	        </tr>\
 	   </table></div>';
