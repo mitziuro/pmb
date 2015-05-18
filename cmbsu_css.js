@@ -126,9 +126,15 @@ var CMBSU_CSS = {
 			  		<br/>\
 					<img class="xjd footer_image" src="https://raw.githubusercontent.com/mitziuro/pmb/master/sabif-fb_inverted.png"/>\
 	            </td>\
-	            <td>\
+	            <td style="vertical-align: top;">\
 	              \<div class="footer_text">\
-						<a href="http://yahoo.com">Primaria Municipiului Bucuresti</a>\
+						<a href="http://pmb.ro">Primaria Municipiului Bucuresti</a>\
+						|\
+						<a href="http://www.smurd.ro">Serviciul Mobil de Urgenta, Reanimare si Descarcerare</a> \
+						<br/>\
+						<a href="http://sabif.ro">Serviciului de Ambulanta Bucuresti-Ilfov</a>\
+						|\
+						<a href="http://isubucuresti.ro">Inspectoratul pentru Situatii de Urgenta "Dealul Spirii" al Municipiului Bucuresti</a> \
 				</div>\
 	            </td>\
 	            <td>\
