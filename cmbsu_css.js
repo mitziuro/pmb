@@ -151,7 +151,6 @@ var CMBSU_CSS = {
     		_Y = Y;
 
     		_Y.on('domready', function () {
-    			alert(444);
     			CMBSU_CSS.createLayout();
     			CMBSU_CSS.createLayoutIE();
     			CMBSU_CSS.createPageDropEditor();
