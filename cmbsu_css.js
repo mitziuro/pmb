@@ -122,6 +122,10 @@ var CMBSU_CSS = {
 		
 		document.getElementById('T:pgl2').style.minHeight= '550px';
 		
+		//footer copyright
+		var footer = document.getElementById('T:pt_pgl9').firstChild.firstChild.firstChild.firstChild.innerHTML;
+		
+		
 		div.innerHTML = '<div class="footer_div"> \
 		<table summary="" class="footer_table x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
 	        <tr>\
@@ -157,22 +161,17 @@ var CMBSU_CSS = {
 							<a href="http://isubucuresti.ro">Inspectoratul pentru Situatii de Urgenta "Dealul Spirii" al Municipiului Bucuresti</a> \
 						</div>\
 				</div>\
+						<div id="copyRght" class="footerCopy">' + footer + '\
+						</div>\
 	            </td>\
 	        </tr>\
 	   </table></div>';
 	
-		alert(6);
-		alert(document.getElementById('T:pt_pgl9').firstChild.firstChild.firstChild.firstChild.innerHTML);
-		/*$('#T:pt_pgl9 > tbody > tr > td > span').each(function() {
-			  alert($(this).val());
-		});*/
-		
-		/*
 		document.getElementById('f1').insertBefore(document.getElementById('T:pgl1'), document.getElementById('f1').firstChild);    
 		document.getElementById('f1').removeChild(document.getElementById('T:globalContainer'));
 		document.getElementById('T:pgl1').style.overflow = '';
 		document.getElementById('T:wc_psl369').style.height = '0px';
-		*/
+	
 		
 	},
 	
