@@ -24,8 +24,7 @@ var CMBSU = {
     init: function() {
     	CMBSU.loadScript('http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js', function(){});
     	CMBSU.loadScript('http://code.jquery.com/jquery-2.1.4.min.js', function(){});
-    	CMBSU.loadScript(CMBSU_URL + 'cmbsu_alert.js', function(){});
-    	
+    	CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){});
     	
     }
 };
