@@ -27,20 +27,11 @@ var CMBSU_ALERT = {
 	        url: CMBSU_COMPANION + 'alert', 
 	        data: {}, 
 	        success: function (data) { 
-	        	alert(data.message);
+	        	CMBSU_ALERT.writeAlert(data.type, data.message);
 	        }
 	    });
 		
-		/*
-		$.get(CMBSU_COMPANION + 'alert', function(data, status){
-	        //alert("Data: " + data + "\nStatus: " + status);
-			var data = $.parseJSON(data);
-			alert(data.message);
-			CMBSU_ALERT.writeAlert('A', 'Alrreeeeeeeeeerta');
-	    });
-		*/
 		
-		//CMBSU_COMPANION
 	},
 	
 	init: function() {
