@@ -151,7 +151,7 @@ var CMBSU_CSS = {
 						<div class="footer_div_">\
 							<a href="http://www.smurd.ro">Serviciul Mobil de Urgenta, Reanimare si Descarcerare</a> \
 						</div>\
-						<div style="position:relative;top:20px;">\
+						<div style="position:relative;top:69px;">\
 							<div class="footer_div_"> \
 								<a href="http://sabif.ro">Serviciul de Ambulanta Bucuresti-Ilfov</a>\
 							</div>\
