@@ -206,8 +206,6 @@ var CMBSU_CSS = {
 		           }
 		       }
 		       
-		       
-		       
 		       children = frames[i].children;       
 		    }
 	},
