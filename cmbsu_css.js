@@ -250,6 +250,17 @@ var CMBSU_CSS = {
 		
 	},
 	
+	quizModify: function() {
+		var tds = document.getElementById('T:pgl8241733443').firstChild.firstChild;
+		
+		tds[1].className += 'quizTd';
+		
+	},
+	
+	firstPageModificators: function() {
+		CMBSU_CSS.quizModify();
+	},
+ 	
     init: function() {
    
     	YUI().use('node', 'anim', 'event-focus', function(Y) {
@@ -270,6 +281,9 @@ var CMBSU_CSS = {
     	CMBSU_CSS.createFrames();
     	CMBSU_CSS.getAlert();
     	
+    	if(document.getElementById('firstPage') != null){
+    		CMBSU_CSS.firstPageModificators();
+    	}
     }
 };
 
