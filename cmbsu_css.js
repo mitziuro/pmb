@@ -212,6 +212,17 @@ var CMBSU_CSS = {
 		    }
 	},
 	
+	buildLeftMenu: function() {
+		
+		var leftMenu = '<div id="leftMenu">\
+			<div id="complaintDivMenu"></div>\
+			<div id="newsLetterDivMenu"></div>\
+			<div id="facebookDivMenu"></div>\
+			</div>';
+		$('body').append(leftMenu);
+		
+	}
+	
 	writeAlert: function(type, content) {
 		var div = document.createElement("div");
 		
@@ -283,6 +294,7 @@ var CMBSU_CSS = {
     	
     	CMBSU_CSS.createFrames();
     	CMBSU_CSS.getAlert();
+    	CMBSU_CSS.buildLeftMenu();
     	
     	if(document.getElementById('firstPage') != null){
     		CMBSU_CSS.firstPageModificators();
