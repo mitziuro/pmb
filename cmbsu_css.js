@@ -251,7 +251,7 @@ var CMBSU_CSS = {
 	},
 	
 	quizModify: function() {
-		var tds = document.getElementById('T:pgl8241733443').firstChild.firstChild;
+		var tds = document.getElementById('T:pgl8241733443').firstChild.firstChild.childNodes;
 		
 		tds[1].className += 'quizTd';
 		
