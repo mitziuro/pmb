@@ -160,6 +160,12 @@ var CMBSU_CSS = {
 	            </td>\
 	        </tr>\
 	   </table></div>';
+		
+		
+		$('#T:pt_pgl9 tbody tr td span').each(function() {
+			  $(this).val();
+		});
+		
 		/*
 		document.getElementById('f1').insertBefore(document.getElementById('T:pgl1'), document.getElementById('f1').firstChild);    
 		document.getElementById('f1').removeChild(document.getElementById('T:globalContainer'));
