@@ -22,12 +22,23 @@ var CMBSU_ALERT = {
 	
 	getAlert: function() {
 		
+		$.ajax({ 
+	        type: 'GET', 
+	        url: CMBSU_COMPANION + 'alert', 
+	        data: {}, 
+	        success: function (data) { 
+	        	alert(data.message);
+	        }
+	    });
+		
+		/*
 		$.get(CMBSU_COMPANION + 'alert', function(data, status){
 	        //alert("Data: " + data + "\nStatus: " + status);
-			var data = jQuery.parseJSON(data);
+			var data = $.parseJSON(data);
 			alert(data.message);
 			CMBSU_ALERT.writeAlert('A', 'Alrreeeeeeeeeerta');
 	    });
+		*/
 		
 		//CMBSU_COMPANION
 	},
