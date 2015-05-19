@@ -125,7 +125,6 @@ var CMBSU_CSS = {
 		//footer copyright
 		var footer = document.getElementById('T:pt_pgl9').firstChild.firstChild.firstChild.firstChild.innerHTML;
 		
-		
 		div.innerHTML = '<div class="footer_div"> \
 		<table summary="" class="footer_table x25t x1a" style="text-align:center;" border="0" cellpadding="0" cellspacing="0">\
 	        <tr>\
