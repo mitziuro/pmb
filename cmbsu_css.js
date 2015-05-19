@@ -219,7 +219,7 @@ var CMBSU_CSS = {
 			</div>';
 		$('body').append(leftMenu);
 		
-	}
+	},
 	
 	writeAlert: function(type, content) {
 		var div = document.createElement("div");
