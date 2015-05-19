@@ -171,6 +171,40 @@ var CMBSU_CSS = {
 		document.getElementById('T:pcust2::content').style.overflow = 'hidden';
 	},
 	
+	createFrames: function() {
+		 	var frames = document.getElementsByClassName("div-pmb-iframe");
+		 	var _loc = document.location;
+		 	var children = null;
+	    
+		    _loc = _loc.toString().split('?').length == 2 ? _loc.toString().split('?')[1] : null;
+		    
+		    for(var i in frames) {
+		       if(frames[i].innerHTML == null) {
+		           continue;
+		       }
+		       
+		       frames[i].innerHTML = frames[i].innerHTML.replace('pmb-iframe', 'iframe');
+		       
+		       if(_loc == null) {
+		            continue;
+		       }
+		  
+		       children = frames[i].childNodes;
+		       for(var j in children) {
+		       
+		          
+		       
+		           if(children[j].tagName == 'iframe' || children[j].tagName == 'IFRAME') {
+		               children[j].src = children[j].src + '?' + _loc;
+		           }
+		       }
+		       
+		       
+		       
+		       children = frames[i].children;       
+		    }
+	},
+	
     init: function() {
    
     	YUI().use('node', 'anim', 'event-focus', function(Y) {
@@ -188,6 +222,7 @@ var CMBSU_CSS = {
     		});
     	});
     	
+    	CMBSU_CSS.createFrames();
      	CMBSU_ALERT.init();
     	
     }
