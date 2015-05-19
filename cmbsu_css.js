@@ -162,9 +162,10 @@ var CMBSU_CSS = {
 	   </table></div>';
 		
 		alert(5);
-		$('#T:pt_pgl9 > tbody > tr > td > span').each(function() {
+		alert(document.getElementById('#T:pt_pgl9').firstChild.firstChild.firstChild.firstChild.innerHTML);
+		/*$('#T:pt_pgl9 > tbody > tr > td > span').each(function() {
 			  alert($(this).val());
-		});
+		});*/
 		
 		/*
 		document.getElementById('f1').insertBefore(document.getElementById('T:pgl1'), document.getElementById('f1').firstChild);    
