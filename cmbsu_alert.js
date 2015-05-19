@@ -44,6 +44,7 @@ var CMBSU_ALERT = {
 	},
 	
 	init: function() {
+		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){});
 		CMBSU_ALERT.getAlert();
 	}
     
