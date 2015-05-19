@@ -162,7 +162,7 @@ var CMBSU_CSS = {
 	   </table></div>';
 		
 		
-		$('#T:pt_pgl9 tbody tr td span').each(function() {
+		$('#T:pt_pgl9 > tbody > tr > td > span').each(function() {
 			  $(this).val();
 		});
 		
