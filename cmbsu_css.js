@@ -226,9 +226,9 @@ var CMBSU_CSS = {
 	writeAlert: function(type, content) {
 		var div = document.createElement("div");
 		
-		if(type == 0) {
+		//if(type == 0) {
 			return;
-		}
+		//}
 		
 		if(type == 1) {
 			div.className= "alert_div";
