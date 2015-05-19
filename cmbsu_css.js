@@ -215,9 +215,9 @@ var CMBSU_CSS = {
 		var H = window.screen.availHeight;
 		
 		var leftMenu = '<div id="leftMenu">\
-			<div id="complaintDivMenu" class="leftMenuButtom" style="position:fixed;top:' + 5*H/12 + 'px"></div>\
+			<a href="http://www.prefecturabucuresti.ro/"><div id="complaintDivMenu" class="leftMenuButtom" style="position:fixed;top:' + 5*H/12 + 'px">P</div></a>\
 			<div id="newsLetterDivMenu" class="leftMenuButtom" style="position:fixed;top:' + 6*H/12 + 'px"></div>\
-			<div id="facebookDivMenu" class="leftMenuButtom" style="position:fixed;top:' + 7*H/12 + 'px"></div>\
+			<a target="blank" href="http://www.prefecturabucuresti.ro/"><div id="prefecturaDivMenu" class="leftMenuButtom" style="position:fixed;top:' + 7*H/12 + 'px">P</div></a>\
 			</div>';
 		$('body').append(leftMenu);
 		
