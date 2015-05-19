@@ -212,10 +212,12 @@ var CMBSU_CSS = {
 	
 	buildLeftMenu: function() {
 		
+		var H = window.screen.availHeight;
+		
 		var leftMenu = '<div id="leftMenu">\
-			<div id="complaintDivMenu"></div>\
-			<div id="newsLetterDivMenu"></div>\
-			<div id="facebookDivMenu"></div>\
+			<div id="complaintDivMenu leftMenuButtom" style="position:fixed;top:' + H/3 + 'px"></div>\
+			<div id="newsLetterDivMenu leftMenuButtom" style="position:fixed;top:' + 2*H/3 + 'px"></div>\
+			<div id="facebookDivMenu leftMenuButtom" style="position:fixed;top:' + H + 'px"></div>\
 			</div>';
 		$('body').append(leftMenu);
 		
