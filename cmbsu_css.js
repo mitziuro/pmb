@@ -164,6 +164,8 @@ var CMBSU_CSS = {
 		document.getElementById('f1').insertBefore(document.getElementById('T:pgl1'), document.getElementById('f1').firstChild);    
 		document.getElementById('f1').removeChild(document.getElementById('T:globalContainer'));
 		document.getElementById('T:pgl1').style.overflow = '';
+		document.getElementById('T:wc_psl369').style.height = '0px';
+		
 		
 	},
 	
