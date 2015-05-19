@@ -211,7 +211,7 @@ var CMBSU_CSS = {
 	},
 	
 	buildLeftMenu: function() {
-		
+		/*
 		var H = window.screen.availHeight;
 		
 		var leftMenu = '<div id="leftMenu">\
@@ -220,7 +220,7 @@ var CMBSU_CSS = {
 			<a target="blank" href="http://www.prefecturabucuresti.ro/"><div id="prefecturaDivMenu" class="leftMenuButtom" style="position:fixed;top:' + 7*H/12 + 'px">P</div></a>\
 			</div>';
 		$('body').append(leftMenu);
-		
+		*/
 	},
 	
 	writeAlert: function(type, content) {
