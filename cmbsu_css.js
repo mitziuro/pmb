@@ -151,12 +151,13 @@ var CMBSU_CSS = {
 						<div class="footer_div_">\
 							<a href="http://www.smurd.ro">Serviciul Mobil de Urgenta, Reanimare si Descarcerare</a> \
 						</div>\
-						<div style="height:70px;"></div>\
-						<div class="footer_div_"> \
-							<a href="http://sabif.ro">Serviciul de Ambulanta Bucuresti-Ilfov</a>\
-						</div>\
-						<div class="footer_div_">\
-							<a href="http://isubucuresti.ro">Inspectoratul pentru Situatii de Urgenta "Dealul Spirii" al Municipiului Bucuresti</a> \
+						<div style="position:relative;top:20px;">\
+							<div class="footer_div_"> \
+								<a href="http://sabif.ro">Serviciul de Ambulanta Bucuresti-Ilfov</a>\
+							</div>\
+							<div class="footer_div_">\
+								<a href="http://isubucuresti.ro">Inspectoratul pentru Situatii de Urgenta "Dealul Spirii" al Municipiului Bucuresti</a> \
+							</div>\
 						</div>\
 				</div>\
 						<div id="copyRght" class="footerCopy">' + footer + '\
