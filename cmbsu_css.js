@@ -243,7 +243,7 @@ var CMBSU_CSS = {
 	        url: CMBSU_COMPANION + 'alert', 
 	        data: {}, 
 	        success: function (data) { 
-	        	CMBSU_ALERT.writeAlert(data.type, data.message);
+	        	CMBSU_CSS.writeAlert(data.type, data.message);
 	        }
 	    });
 		
