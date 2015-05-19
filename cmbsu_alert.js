@@ -20,8 +20,20 @@ var CMBSU_ALERT = {
 		
 	},
 	
+	getAlert: function() {
+		
+		$.get(CMBSU_COMPANION + 'alert', function(data, status){
+	        //alert("Data: " + data + "\nStatus: " + status);
+			var data = jQuery.parseJSON(data);
+			alert(data.message);
+			CMBSU_ALERT.writeAlert('A', 'Alrreeeeeeeeeerta');
+	    });
+		
+		//CMBSU_COMPANION
+	},
+	
 	init: function() {
-		CMBSU_ALERT.writeAlert('W', 'Aleeeeeeeeeerta');
+		CMBSU_ALERT.getAlert();
 	}
     
 };

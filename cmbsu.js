@@ -1,4 +1,5 @@
 var CMBSU_URL = 'https://rawgit.com/mitziuro/pmb/master/';
+var CMBSU_COMPANION = '/pmbext-extension/';
 
 var CMBSU = {
 
