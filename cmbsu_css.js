@@ -265,8 +265,10 @@ var CMBSU_CSS = {
 		var tds = document.getElementById('T:pgl8241733443').firstChild.firstChild.childNodes;
 		tds[1].className += 'quizTd';
 		
-		document.getElementById('T:oc_1718626991region1:srsctb1').style.display = 'none';
-		document.getElementById('T:oc_1718626991region1:srsctb3').style.display = 'none';
+		try {
+			document.getElementById('T:oc_1718626991region1:srsctb1').style.display = 'none';
+			document.getElementById('T:oc_1718626991region1:srsctb3').style.display = 'none';
+		}catch(ex){}
 		
 		
 	},
