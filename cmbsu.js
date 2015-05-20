@@ -34,7 +34,7 @@ var CMBSU = {
     			
     		});
     		
-    		alert(13);
+    		alert(143);
         	
     		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){});
     		
