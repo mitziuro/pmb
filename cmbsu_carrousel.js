@@ -1,4 +1,4 @@
-/*(function($) {
+(function($) {
     $(function() {
         var jcarousel = $('.jcarousel');
 
@@ -17,7 +17,6 @@
             })
             .jcarousel({
                 wrap: 'circular',
-                items: '.__alert_content'
             });
 
         $('.jcarousel-control-prev')
@@ -48,18 +47,3 @@
             });
     });
 })(jQuery);
-*/
-
-$('.jcarousel').jcarousel({
-    animation: 'slow',
-    items: '.__alert_content'
-});
-
-/*$('.jcarousel').jcarousel({
-    animation: {
-        duration: 800,
-        easing:   'linear',
-        complete: function() {
-        }
-    }
-});*/
