@@ -55,11 +55,11 @@ $('.jcarousel').jcarousel({
     items: '.__alert_content'
 });
 
-$('.jcarousel').jcarousel({
+/*$('.jcarousel').jcarousel({
     animation: {
         duration: 800,
         easing:   'linear',
         complete: function() {
         }
     }
-});
+});*/
