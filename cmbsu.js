@@ -34,14 +34,17 @@ var CMBSU = {
     			
     		});
     		
+    		alert(11);
+        	
+    		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){});
+    		
     	});
     	
     	
     	
     	
-    	alert(7);
     	
-    	CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){});
+    	
     	
     }
 };
