@@ -33,8 +33,7 @@ var CMBSU = {
     			CMBSU.loadScript(CMBSU_URL + 'cmbsu_carrousel.js', function(){});
     			
     		});
-    		
-    		alert(143);
+
         	
     		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){});
     		
