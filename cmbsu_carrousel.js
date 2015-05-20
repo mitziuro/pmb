@@ -16,7 +16,8 @@
                 carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
             })
             .jcarousel({
-                wrap: 'circular'
+                wrap: 'circular',
+                items: '.__alert_content'
             });
 
         $('.jcarousel-control-prev')
@@ -42,7 +43,7 @@
             .jcarouselPagination({
                 perPage: 1,
                 item: function(page) {
-                    return '<a href="#' + page + '">' + page + '</a>';
+                    return  page;
                 }
             });
     });
