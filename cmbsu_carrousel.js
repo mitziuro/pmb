@@ -3,7 +3,7 @@ var swiper = new Swiper('.swiper-container', {
     paginationClickable: true,
     autoplay: true,
     effect: 'cube',
-    
+    speed: 1000,
     cube: {
     	  slideShadows: true,
     	  shadow: true,
