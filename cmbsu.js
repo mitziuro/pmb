@@ -28,7 +28,7 @@ var CMBSU = {
     	CMBSU.loadScript('http://code.jquery.com/jquery-2.1.4.min.js', function(){
     	
     		//carrousel
-    		CMBSU.loadScript('http://bxslider.com/lib/jquery.bxslider.js', function(){
+    		CMBSU.loadScript(CMBSU_URL + swiper.min.js, function(){
     			
     			CMBSU.loadScript(CMBSU_URL + 'cmbsu_carrousel.js', function(){});
     			
