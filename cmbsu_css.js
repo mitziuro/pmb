@@ -274,7 +274,7 @@ var CMBSU_CSS = {
 	},
 	
 	firstPageModificators: function() {
-		CMBSU_CSS.quizModify();
+		//CMBSU_CSS.quizModify();
 	},
  	
     init: function() {
