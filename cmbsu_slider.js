@@ -1,5 +1,5 @@
 $(function(){
-        $('.slide-out-div').tabSlideOut({
+        $('#T:portlet9076752699').tabSlideOut({
             tabHandle: '.handle',                     //class of the element that will become your tab
             pathToTabImage: 'images/contact_tab.gif', //path to the image for the tab //Optionally can be set using css
             imageHeight: '122px',                     //height of tab image           //Optionally can be set using css
