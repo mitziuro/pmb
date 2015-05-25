@@ -34,10 +34,21 @@ var CMBSU = {
     			
     		});
 
+    		
+    		//slider
+    		CMBSU.loadScript(CMBSU_URL + 'jquery.tabSlideOut.v1.3.js', function(){
+    			
+    			CMBSU.loadScript(CMBSU_URL + 'cmbsu_slider.js', function(){});
+    			
+    		});
+
         	
     		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){});
     		
     	});
+    	
+    	
+    	
     	
     	
     	
