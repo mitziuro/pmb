@@ -263,7 +263,7 @@ var CMBSU_CSS = {
 	
 	quizModify: function() {
 		
-		document.getElementById('T:portlet9076752699').className += ' quizTd';
+		document.getElementById('T:oc_1718626991region1:srpsl1::c).className += ' quizTd';
 		
 		//var tds = document.getElementById('T:pgl8241733443').firstChild.firstChild.childNodes;
 		//tds[1].className += 'quizTd';
