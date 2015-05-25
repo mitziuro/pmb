@@ -37,18 +37,9 @@ var CMBSU = {
     		
     		}catch(ex){}
 
-    		
-
-        	
-    		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){});
-    		
-    		
-    		CMBSU.loadScript('http://code.jquery.com/jquery-2.1.4.min.js', function(){
-    	    	
-        		try{
-    	
-        		
-        		try{
+    		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){
+    			
+    			try{
     	    		//slider
     	    		CMBSU.loadScript(CMBSU_URL + 'jquery.tabSlideOut.v1.3.js', function(){
     	    			
@@ -56,6 +47,9 @@ var CMBSU = {
     	    			
     	    		});
         		}catch(ex){}
+    			
+    			
+    		});
 
         		
     	});
