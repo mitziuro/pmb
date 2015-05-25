@@ -265,6 +265,17 @@ var CMBSU_CSS = {
 		
 		document.getElementById('T:oc_1718626991region1').className += ' quizTd';
 		
+		
+		
+		if(document.getElementById('T:oc_1718626991region1:tspgl2') != null) {
+			
+			document.getElementById('T:oc_1718626991region1:tspgl2').firstChild.onClick = function() {
+				$(document.getElementById('T:oc_1718626991region1:tspgl2').firstChild).effect('slide', {}, 1000, function() {});
+			};
+			
+			
+		}
+		
 		//var tds = document.getElementById('T:pgl8241733443').firstChild.firstChild.childNodes;
 		//tds[1].className += 'quizTd';
 		
