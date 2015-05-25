@@ -38,18 +38,26 @@ var CMBSU = {
     		}catch(ex){}
 
     		
-    		try{
-	    		//slider
-	    		CMBSU.loadScript(CMBSU_URL + 'jquery.tabSlideOut.v1.3.js', function(){
-	    			
-	    			CMBSU.loadScript(CMBSU_URL + 'cmbsu_slider.js', function(){});
-	    			
-	    		});
-    		}catch(ex){}
 
         	
     		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){});
     		
+    		
+    		CMBSU.loadScript('http://code.jquery.com/jquery-2.1.4.min.js', function(){
+    	    	
+        		try{
+    	
+        		
+        		try{
+    	    		//slider
+    	    		CMBSU.loadScript(CMBSU_URL + 'jquery.tabSlideOut.v1.3.js', function(){
+    	    			
+    	    			CMBSU.loadScript(CMBSU_URL + 'cmbsu_slider.js', function(){});
+    	    			
+    	    		});
+        		}catch(ex){}
+
+        		
     	});
     	
     	
