@@ -1,4 +1,4 @@
-alert(3);
+alert(8);
 alert($('ana'));
 
 $('ana').tabSlideOut({
