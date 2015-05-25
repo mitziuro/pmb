@@ -1,5 +1,5 @@
 alert(3);
-
+alert($('#T:portlet9076752699'));
 
 $('#T:portlet9076752699').tabSlideOut({
     tabHandle: '.handle',                     //class of the element that will become your tab
