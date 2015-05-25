@@ -36,14 +36,14 @@ var CMBSU = {
 	    		});
     		
     		}catch(ex){}
+    			
+			CMBSU.loadScript('http://code.jquery.com/ui/1.11.3/jquery-ui.min.js', function(){
+				CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){
 
-    		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){
-    			
-    			
-        	
-    			
-    			
-    		});
+	    		});
+			});
+    		
+    		
 
         		
     	});
