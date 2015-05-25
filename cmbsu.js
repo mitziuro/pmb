@@ -39,13 +39,7 @@ var CMBSU = {
 
     		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){
     			
-    			try{
-    	    		//slider
-    	    		CMBSU.loadScript(CMBSU_URL + 'jquery.tabSlideOut.v1.3.js', function(){
-    	    			
-    	    			CMBSU.loadScript(CMBSU_URL + 'cmbsu_slider.js', function(){});
-    	    			
-    	    		});
+    			
         		}catch(ex){}
     			
     			
