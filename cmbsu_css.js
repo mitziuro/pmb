@@ -262,8 +262,11 @@ var CMBSU_CSS = {
 	},
 	
 	quizModify: function() {
-		var tds = document.getElementById('T:pgl8241733443').firstChild.firstChild.childNodes;
-		tds[1].className += 'quizTd';
+		
+		document.getElementById('T:portlet9076752699').className += 'quizTd';
+		
+		//var tds = document.getElementById('T:pgl8241733443').firstChild.firstChild.childNodes;
+		//tds[1].className += 'quizTd';
 		
 		try {
 			document.getElementById('T:oc_1718626991region1:srsctb1').style.display = 'none';
@@ -274,7 +277,7 @@ var CMBSU_CSS = {
 	},
 	
 	firstPageModificators: function() {
-		//CMBSU_CSS.quizModify();
+		CMBSU_CSS.quizModify();
 	},
  	
     init: function() {

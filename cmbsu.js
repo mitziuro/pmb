@@ -40,7 +40,7 @@ var CMBSU = {
     		CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){
     			
     			
-        		}catch(ex){}
+        	
     			
     			
     		});
