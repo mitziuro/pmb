@@ -1,7 +1,7 @@
 alert(3);
-alert($('#T:portlet9076752699'));
+alert($('ana'));
 
-$('#T:portlet9076752699').tabSlideOut({
+$('ana').tabSlideOut({
    // tabHandle: '.handle',                     //class of the element that will become your tab
     tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
     speed: 300,                               //speed of animation
