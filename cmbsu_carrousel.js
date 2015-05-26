@@ -20,6 +20,7 @@ var swiper_alert = new Swiper('.main_alert-container', {
     buttonDisabledClass: 'main_alert-button-disabled'
 });
 
+alert(6);
 var swiper_anno = new Swiper('.anno-container', {
     paginationClickable: true,
     autoplayDisableOnInteraction: false,
