@@ -20,17 +20,13 @@ var swiper_alert = new Swiper('.main_alert-container', {
     buttonDisabledClass: 'main_alert-button-disabled'
 });
 
-alert(6);
+alert(5);
 var swiper_anno = new Swiper('.anno-container', {
     paginationClickable: true,
     autoplayDisableOnInteraction: false,
-    effect: 'coverflow',
-    coverflow: {
-    	  rotate: 50,
-    	  stretch: 0,
-    	  depth: 100,
-    	  modifier: 1,
-    	  slideShadows : true
+    effect: 'fade',
+    fade: {
+    	  crossFade: true
     },
     speed: 1000,
     slideClass: 'anno-slide', 
