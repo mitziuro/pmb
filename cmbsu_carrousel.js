@@ -4,6 +4,7 @@ var swiper = new Swiper('.anno-container', {
     autoplayDisableOnInteraction: false,
     speed: 8000,
     slideClass: 'anno-slide', 
+    pagination: '.anno-pagination',
     slideActiveClass: 'anno-slide-active',
     slideVisibleClass: 'anno-slide-visible',
     slideDuplicateClass: 'anno-slide-duplicate',
