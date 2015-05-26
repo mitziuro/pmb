@@ -265,8 +265,6 @@ var CMBSU_CSS = {
 		
 		document.getElementById('T:oc_1718626991region1').className += ' quizTd';
 		
-		
-		
 		if(document.getElementById('T:oc_1718626991region1:tspgl2') != null) {
 			
 	
