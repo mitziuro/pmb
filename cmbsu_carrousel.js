@@ -1,8 +1,8 @@
 var swiper = new Swiper('.anno-container', {
     paginationClickable: true,
-    autoplay: true,
+    autoplay: 8000,
     autoplayDisableOnInteraction: false,
-    speed: 8000,
+    speed: 1000,
     slideClass: 'anno-slide', 
     pagination: '.anno-pagination',
     slideActiveClass: 'anno-slide-active',
