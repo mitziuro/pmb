@@ -262,10 +262,9 @@ var CMBSU_CSS = {
 	},
 	
 	middleSliderModify: function() {
-		alert(4);
 		if(document.getElementById('pcnt1598024334') != null) {
-			alert(5);
 			document.getElementById('pcnt1598024334').className += ' colorWrapper';
+			document.getElementById('T:hm_pnc2').className += ' topDiv';
 		}
 		
 	},
