@@ -263,6 +263,9 @@ var CMBSU_CSS = {
 	
 	quizModify: function() {
 		
+		//hide quiz
+		document.getElementById('T:oc_1718626991region1').style.display = 'none';
+		
 		document.getElementById('T:oc_1718626991region1').className += ' quizTd';
 		
 		if(document.getElementById('T:oc_1718626991region1:tspgl2') != null) {
