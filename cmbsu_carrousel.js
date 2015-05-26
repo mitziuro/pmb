@@ -6,6 +6,10 @@ var swiper_alert = new Swiper('.main_alert-container', {
     autoplay: 8000,
     autoplayDisableOnInteraction: false,
     speed: 1000,
+    effect: 'fade',
+    fade: {
+    	  crossFade: true
+    },
     slideClass: 'main_alert-slide', 
     pagination: '.main_alert-pagination',
     slideActiveClass: 'main_alert-slide-active',
@@ -20,14 +24,9 @@ var swiper_alert = new Swiper('.main_alert-container', {
     buttonDisabledClass: 'main_alert-button-disabled'
 });
 
-alert(5);
 var swiper_anno = new Swiper('.anno-container', {
     paginationClickable: true,
     autoplayDisableOnInteraction: false,
-    effect: 'fade',
-    fade: {
-    	  crossFade: true
-    },
     speed: 1000,
     slideClass: 'anno-slide', 
     pagination: '.anno-pagination',
