@@ -261,6 +261,12 @@ var CMBSU_CSS = {
 		
 	},
 	
+	miiddleSliderModify: function() {
+		
+		document.getElementById('pcnt1598024334').className == ' colorWrapper';
+		
+	},
+	
 	quizModify: function() {
 		
 
