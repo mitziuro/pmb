@@ -16,3 +16,24 @@ var swiper = new Swiper('.anno-container', {
     paginationHiddenClass: 'anno-pagination-hidden',
     buttonDisabledClass: 'anno-button-disabled'
 });
+
+
+var swiper = new Swiper('.main_alert-container', {
+    paginationClickable: true,
+    autoplay: 8000,
+    autoplayDisableOnInteraction: false,
+    speed: 1000,
+    slideClass: 'main_alert-slide', 
+    pagination: '.main_alert-pagination',
+    slideActiveClass: 'main_alert-slide-active',
+    slideVisibleClass: 'main_alert-slide-visible',
+    slideDuplicateClass: 'main_alert-slide-duplicate',
+    slideNextClass: 'main_alert-slide-next',
+    slidePrevClass: 'main_alert-slide-prev',
+    wrapperClass: 'main_alert-wrapper',
+    bulletClass: 'main_alert-pagination-bullet',
+    bulletActiveClass: 'main_alert-pagination-bullet-active',
+    paginationHiddenClass: 'main_alert-pagination-hidden',
+    buttonDisabledClass: 'main_alert-button-disabled'
+});
+
