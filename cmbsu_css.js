@@ -268,8 +268,7 @@ var CMBSU_CSS = {
 		if(document.getElementById('T:oc_1718626991region1:tspgl2') != null) {
 			
 	
-			alert(document.getElementById('T:oc_1718626991region1:tspgl2').firstChild.tagName);
-			
+		
 			document.getElementById('T:oc_1718626991region1:tspgl2').firstChild.onclick = function() {
 				//alert(document.getElementById('T:oc_1718626991region1').firstChild.tagName);
 				$(document.getElementById('T:sdf_for_oc_1718626991region1').firstChild).effect('slide', {}, 1000, function() {});
