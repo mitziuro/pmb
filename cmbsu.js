@@ -27,19 +27,20 @@ var CMBSU = {
     	CMBSU.loadScript('http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js', function(){});
     	CMBSU.loadScript('http://code.jquery.com/jquery-2.1.4.min.js', function(){
     	
-    		try{
-	    		//carrousel
-	    		CMBSU.loadScript(CMBSU_URL + 'swiper.min.js', function(){
-	    			
-	    			CMBSU.loadScript(CMBSU_URL + 'cmbsu_carrousel.js', function(){});
-	    			
-	    		});
     		
-    		}catch(ex){}
     			
 			CMBSU.loadScript('http://code.jquery.com/ui/1.11.3/jquery-ui.min.js', function(){
 				CMBSU.loadScript(CMBSU_URL + 'cmbsu_css.js', function(){
 
+					try{
+			    		//carrousel
+			    		CMBSU.loadScript(CMBSU_URL + 'swiper.min.js', function(){
+			    			
+			    			CMBSU.loadScript(CMBSU_URL + 'cmbsu_carrousel.js', function(){});
+			    			
+			    		});
+		    		
+		    		}catch(ex){}
 	    		});
 			});
     		
