@@ -261,9 +261,11 @@ var CMBSU_CSS = {
 		
 	},
 	
-	miiddleSliderModify: function() {
+	middleSliderModify: function() {
 		
-		document.getElementById('pcnt1598024334').className == ' colorWrapper';
+		if(document.getElementById('pcnt1598024334') != null) {
+			document.getElementById('pcnt1598024334').className == ' colorWrapper';
+		}
 		
 	},
 	
@@ -300,6 +302,7 @@ var CMBSU_CSS = {
 	
 	firstPageModificators: function() {
 		CMBSU_CSS.quizModify();
+		CMBSU_CSS.middleSliderModify();
 	},
  	
     init: function() {
