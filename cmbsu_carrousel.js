@@ -1,18 +1,17 @@
-var swiper = new Swiper('.swiper-container', {
-    pagination: '.swiper-pagination',
+var swiper = new Swiper('.anno-container', {
     paginationClickable: true,
     autoplay: true,
     autoplayDisableOnInteraction: false,
     speed: 2000,
-    slideClass: 'swiper-slide', 
-    slideActiveClass: 'swiper-slide-active',
-    slideVisibleClass: 'swiper-slide-visible',
-    slideDuplicateClass: 'swiper-slide-duplicate',
-    slideNextClass: 'swiper-slide-next',
-    slidePrevClass: 'swiper-slide-prev',
-    wrapperClass: 'swiper-wrapper',
-    bulletClass: 'swiper-pagination-bullet',
-    bulletActiveClass: 'swiper-pagination-bullet-active',
-    paginationHiddenClass: 'swiper-pagination-hidden',
-    buttonDisabledClass: 'swiper-button-disabled'
+    slideClass: 'anno-slide', 
+    slideActiveClass: 'anno-slide-active',
+    slideVisibleClass: 'anno-slide-visible',
+    slideDuplicateClass: 'anno-slide-duplicate',
+    slideNextClass: 'anno-slide-next',
+    slidePrevClass: 'anno-slide-prev',
+    wrapperClass: 'anno-wrapper',
+    bulletClass: 'anno-pagination-bullet',
+    bulletActiveClass: 'anno-pagination-bullet-active',
+    paginationHiddenClass: 'anno-pagination-hidden',
+    buttonDisabledClass: 'anno-button-disabled'
 });
