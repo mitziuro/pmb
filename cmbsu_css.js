@@ -306,7 +306,17 @@ var CMBSU_CSS = {
 		//document.getElementById('T:sdf_for_oc_1718626991region1::div2').innerHTML = '';
 	
 		if(document.getElementById('T:oc_1718626991region1:srbg12::img') != null) {
+			
+			//$('#T:sdf_for_oc_1718626991region1::div2').hide();
 			document.getElementById('T:oc_1718626991region1').style.width = '442px'; 
+		
+			
+			
+			$('#T:oc_1718626991region1').click(function() {
+			    $('#T:oc_1718626991region1').slideToggle(400);
+			    return false;
+			});
+		
 		}
 		
 	},
