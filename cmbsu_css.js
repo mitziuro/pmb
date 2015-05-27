@@ -296,7 +296,10 @@ var CMBSU_CSS = {
 		
 		//hide quiz
 		//document.getElementById('T:sdf_for_oc_1718626991region1::div2').innerHTML = '';
-		
+	
+		if(document.getElementById('T:oc_1718626991region1:srbg12::img') != null) {
+			document.getElementById('T:oc_1718626991region1').style.width = '500px'; 
+		}
 		
 	},
 	
