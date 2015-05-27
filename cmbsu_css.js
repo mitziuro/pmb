@@ -311,9 +311,9 @@ var CMBSU_CSS = {
 			document.getElementById('T:oc_1718626991region1').style.width = '442px'; 
 		
 			
-			 alert(95);
+		//	 alert(95);
 			$('#T:oc_1718626991region1:srqTtl').click(function() {
-			alert(35);
+		//	alert(35);
 				$('#T:oc_1718626991region1').slideToggle(400);
 			    return false;
 			});
