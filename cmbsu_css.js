@@ -313,7 +313,8 @@ var CMBSU_CSS = {
 			
 			
 			$('#T:oc_1718626991region1').click(function() {
-			    $('#T:oc_1718626991region1').slideToggle(400);
+			    alert(6);
+				$('#T:oc_1718626991region1').slideToggle(400);
 			    return false;
 			});
 		
