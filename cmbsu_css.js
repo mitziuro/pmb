@@ -297,6 +297,11 @@ var CMBSU_CSS = {
 			document.getElementById('T:oc_1718626991region1:srsctb3').style.display = 'none';
 		}catch(ex){}
 		
+		try {
+			document.getElementById('T:oc_1718626991region1:srsocql1').style.display = 'none';
+		}catch(ex){}
+
+		
 		//hide quiz
 		//document.getElementById('T:sdf_for_oc_1718626991region1::div2').innerHTML = '';
 	
