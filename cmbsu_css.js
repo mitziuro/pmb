@@ -291,6 +291,9 @@ var CMBSU_CSS = {
 		
 		try {
 			document.getElementById('T:oc_1718626991region1:srsctb1').style.display = 'none';
+		}catch(ex){}
+		
+		try {
 			document.getElementById('T:oc_1718626991region1:srsctb3').style.display = 'none';
 		}catch(ex){}
 		
