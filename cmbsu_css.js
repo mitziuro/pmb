@@ -311,6 +311,8 @@ var CMBSU_CSS = {
 			document.getElementById('T:oc_1718626991region1').style.width = '442px'; 
 		
 			
+		} else {
+			document.getElementById('T:oc_1718626991region1:tspgl2').style.overflow = 'hidden'; 
 		}
 		
 		$(window).scroll(function() {
