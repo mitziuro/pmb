@@ -290,7 +290,7 @@ var CMBSU_CSS = {
 		
 		if(elem.style.width.split('px')[0] < _width) {
 			elem.style.width = (elem.style.width.split('px')[0] + 5) + 'px';
-			setTimeout('CMBSU_CSS.quizShow();', 50);
+			setTimeout('CMBSU_CSS.quizShow(' + _width + ');', 50);
 		}
 
 	},
