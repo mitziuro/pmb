@@ -290,7 +290,7 @@ var CMBSU_CSS = {
 			elem.style.width = (parseInt(elem.style.width.split('px')[0]) + 20) + 'px';
 			setTimeout('CMBSU_CSS.quizShow(' + _width + ');', 5);
 		} else {
-			elem.style.width = width + 'px';
+			elem.style.width = _width + 'px';
 		}
 
 	},
