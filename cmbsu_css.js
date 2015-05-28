@@ -274,7 +274,7 @@ var CMBSU_CSS = {
 		var elem = document.getElementById('T:oc_1718626991region1');
 		
 		if(parseInt(elem.style.width.split('px')[0]) > 0) {
-			elem.style.width = (parseInt(elem.style.width.split('px')[0]) - 10) + 'px';
+			elem.style.width = (parseInt(elem.style.width.split('px')[0]) - 20) + 'px';
 			setTimeout('CMBSU_CSS.quizHide();', 5);
 		}
 		
@@ -285,7 +285,7 @@ var CMBSU_CSS = {
 		var elem = document.getElementById('T:oc_1718626991region1');
 	
 		if(parseInt(elem.style.width.split('px')[0]) < _width) {
-			elem.style.width = (parseInt(elem.style.width.split('px')[0]) + 10) + 'px';
+			elem.style.width = (parseInt(elem.style.width.split('px')[0]) + 20) + 'px';
 			setTimeout('CMBSU_CSS.quizShow(' + _width + ');', 5);
 		}
 
