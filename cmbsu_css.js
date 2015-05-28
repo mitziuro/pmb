@@ -370,6 +370,7 @@ var CMBSU_CSS = {
 		var div = document.createElement("div");
 		document.getElementById('T:pgl1').appendChild(div);
 		div.id = 'user_profile_';
+		div.className = 'user_profile_';
 		div.innerHTML = 'hanna are mere';
 	},
 	
