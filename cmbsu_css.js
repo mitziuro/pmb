@@ -321,7 +321,7 @@ var CMBSU_CSS = {
 		       
 
 		       $( "#T:oc_1718626991region1" )
-		       .animate({ width: "350px" }, 1000 )
+		       .animate({ width: "350px" }, "slow" )
 		   }
 		});
 		
