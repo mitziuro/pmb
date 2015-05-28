@@ -4,12 +4,12 @@ var CMBSU_CSS = {
 	
 	createPageDropEditor: function() {
 
-		_Y.one(document.getElementById('T:wc_psl36::r')).setStyle('right', '36px');
-		_Y.one(document.getElementById('T:wc_psl36::r')).setStyle('width', '300px');
-		_Y.one(document.getElementById('T:wc_psl36::r')).setStyle('top', '-2px');
+		document.getElementById('T:wc_psl36::r').style.right = '36px';
+		document.getElementById('T:wc_psl36::r').style.width = '300px';
+		document.getElementById('T:wc_psl36::r').style.top = '-2px';
 		
-		_Y.one(document.getElementById('T:globNavItms')).setStyle('position', 'relative');
-		_Y.one(document.getElementById('T:globNavItms')).setStyle('left', '-1px');
+		document.getElementById('T:globNavItms').style.position = 'relative';
+		document.getElementById('T:globNavItms').style.left = '-1px';
 		
 	},
 	
@@ -24,12 +24,12 @@ var CMBSU_CSS = {
 	},
 	
 	createSearch: function() {
-		_Y.one(document.getElementById('T:searchbox:srchFrm:goBtn')).setStyle('background-image', 'url(https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/128/search.png)');
-		_Y.one(document.getElementById('T:searchbox:srchFrm:goBtn')).setStyle('background-size', 'contain');
+	//	_Y.one(document.getElementById('T:searchbox:srchFrm:goBtn')).setStyle('background-image', 'url(https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/128/search.png)');
+	//	_Y.one(document.getElementById('T:searchbox:srchFrm:goBtn')).setStyle('background-size', 'contain');
 	},
 	
 	createSliderSearch: function() {
-		var node = _Y.one(document.getElementById('T:searchbox:srchFrm:siSrTx::content'));
+		/*var node = _Y.one(document.getElementById('T:searchbox:srchFrm:siSrTx::content'));
 		
 		node.set('value', 'Cauta...');
 		node.setStyle('font-style', 'italic');
@@ -81,7 +81,7 @@ var CMBSU_CSS = {
 					node.setStyle('font-style', 'italic');
 				}
 				
-		};
+		};*/
 
 		
 	},
@@ -332,19 +332,14 @@ var CMBSU_CSS = {
  	
     init: function() {
    
-    	YUI().use('node', 'anim', 'event-focus', function(Y) {
-    		_Y = Y;
-
-    		_Y.on('domready', function () {
+    	$( document ).ready(function() {
     			CMBSU_CSS.createLayout();
     			CMBSU_CSS.createLayoutIE();
     			CMBSU_CSS.createPageDropEditor();
     			CMBSU_CSS.createSliderSearch();
-    		//	CMBSU_CSS.createSearch();
     			CMBSU_CSS.createScroll();
     			
-    			
-    		});
+    		
     	});
     	
     	CMBSU_CSS.createFrames();
