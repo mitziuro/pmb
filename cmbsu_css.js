@@ -273,14 +273,10 @@ var CMBSU_CSS = {
 		
 		var elem = document.getElementById('T:oc_1718626991region1');
 		
-		var _f = function() {
-			if(elem.style.width.split('px')[0] != '0') {
-				elem.style.width = (elem.style.width.split('px')[0] - 1) + 'px';
-				setTimeout('_f()', 50);
-			}
-		};
-		
-		_f();
+		if(parseInt(elem.style.width.split('px')[0]) > 0) {
+			elem.style.width = (parseInt(elem.style.width.split('px')[0]) - 10) + 'px';
+			setTimeout('CMBSU_CSS.quizHide();', 5);
+		}
 		
 	},
 	
@@ -289,7 +285,7 @@ var CMBSU_CSS = {
 		var elem = document.getElementById('T:oc_1718626991region1');
 	
 		if(parseInt(elem.style.width.split('px')[0]) < _width) {
-			elem.style.width = (parseInt(elem.style.width.split('px')[0]) + 5) + 'px';
+			elem.style.width = (parseInt(elem.style.width.split('px')[0]) + 10) + 'px';
 			setTimeout('CMBSU_CSS.quizShow(' + _width + ');', 5);
 		}
 
@@ -342,9 +338,11 @@ var CMBSU_CSS = {
 		}
 		
 		$(window).scroll(function() {
-		   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+		   if($(window).scrollTop() + $(window).height() == $(document).height() - 30) {
 
 			   CMBSU_CSS.quizShow(350);
+		   } else {
+			   CMBSU_CSS.quizHide();
 		   }
 		});
 		
