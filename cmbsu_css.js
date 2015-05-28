@@ -317,7 +317,7 @@ var CMBSU_CSS = {
 		
 		$(window).scroll(function() {
 		   if($(window).scrollTop() + $(window).height() == $(document).height()) {
-
+alert($( "#T:oc_1718626991region1" ));
 		       $( "#T:oc_1718626991region1" ).animate({ width: "350px" }, "slow" )
 		   }
 		});
