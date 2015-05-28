@@ -373,7 +373,7 @@ var CMBSU_CSS = {
 		div.className = 'user_profile_';
 		div.innerHTML = 'hanna are mere';
 		
-		
+		document.getElementById('T:pcust29::content').style.display = 'none';
 		
 		div.appendChild(document.getElementById('T:wcAdminLink:adminLink'));
 		div.appendChild(document.getElementById('T:wcLogoutLink:logoutLink'));
