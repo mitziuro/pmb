@@ -328,7 +328,7 @@ var CMBSU_CSS = {
 		if(document.getElementById('T:oc_1718626991region1:srbg12::img') != null) {
 			
 			//$('#T:sdf_for_oc_1718626991region1::div2').hide();
-			document.getElementById('T:oc_1718626991region1').style.width = '442px'; 
+			//document.getElementById('T:oc_1718626991region1').style.width = '442px'; 
 		
 			
 		} else {
@@ -343,7 +343,12 @@ var CMBSU_CSS = {
 		$(window).scroll(function() {
 		   if($(window).scrollTop() + $(window).height() > $(document).height() - 30) {
 
-			   CMBSU_CSS.quizShow(350);
+			   if(document.getElementById('T:oc_1718626991region1:srbg12::img') != null) {
+				   CMBSU_CSS.quizShow(450);
+			   } else {
+				   CMBSU_CSS.quizShow(350);  
+			   }
+			   
 		   } else {
 			   CMBSU_CSS.quizHide();
 		   }
