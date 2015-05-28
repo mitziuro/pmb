@@ -303,7 +303,7 @@ var CMBSU_CSS = {
 
 		
 		//hide quiz
-		document.getElementById('T:oc_1718626991region1').style.width = '0px';
+		//document.getElementById('T:oc_1718626991region1').style.width = '0px';
 	
 		if(document.getElementById('T:oc_1718626991region1:srbg12::img') != null) {
 			
@@ -317,11 +317,8 @@ var CMBSU_CSS = {
 		
 		$(window).scroll(function() {
 		   if($(window).scrollTop() + $(window).height() == $(document).height()) {
-		       alert("boddttom!");
-		       
 
-		       $( "#T:oc_1718626991region1" )
-		       .animate({ width: "350px" }, "slow" )
+		       $( "#T:oc_1718626991region1" ).animate({ width: "350px" }, "slow" )
 		   }
 		});
 		
