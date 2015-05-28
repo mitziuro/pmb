@@ -276,6 +276,8 @@ var CMBSU_CSS = {
 		if(parseInt(elem.style.width.split('px')[0]) > 0) {
 			elem.style.width = (parseInt(elem.style.width.split('px')[0]) - 20) + 'px';
 			setTimeout('CMBSU_CSS.quizHide();', 5);
+		} else {
+			elem.style.width = '0px';
 		}
 		
 	},
@@ -287,6 +289,8 @@ var CMBSU_CSS = {
 		if(parseInt(elem.style.width.split('px')[0]) < _width) {
 			elem.style.width = (parseInt(elem.style.width.split('px')[0]) + 20) + 'px';
 			setTimeout('CMBSU_CSS.quizShow(' + _width + ');', 5);
+		} else {
+			elem.style.width = width + 'px';
 		}
 
 	},
