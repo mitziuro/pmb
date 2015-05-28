@@ -269,6 +269,36 @@ var CMBSU_CSS = {
 		
 	},
 	
+	quizHide: function() {
+		
+		var elem = document.getElementById('T:oc_1718626991region1');
+		
+		var _f = function() {
+			if(elem.style.width.split('px')[0] != '0') {
+				elem.style.width = (elem.style.width.split('px')[0] - 1) + 'px';
+				setTimeout('_f()', 50);
+			}
+		};
+		
+		_f();
+		
+	},
+	
+	quizShow: function(_width) {
+		
+		var elem = document.getElementById('T:oc_1718626991region1');
+		
+		var _f = function() {
+			if(elem.style.width.split('px')[0] < _width) {
+				elem.style.width = (elem.style.width.split('px')[0] + 1) + 'px';
+				setTimeout('_f()', 50);
+			}
+		};
+		
+		_f();
+		
+	},
+	
 	quizModify: function() {
 		
 
@@ -318,7 +348,7 @@ var CMBSU_CSS = {
 		$(window).scroll(function() {
 		   if($(window).scrollTop() + $(window).height() == $(document).height()) {
 
-		       $( "#T:oc_1718626991region1" ).animate({ width: "350px" }, "slow" )
+			   CMBSU_CSS.quizShow(350);
 		   }
 		});
 		
