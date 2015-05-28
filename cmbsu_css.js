@@ -333,7 +333,8 @@ var CMBSU_CSS = {
 			
 			//$('#T:sdf_for_oc_1718626991region1::div2').hide();
 			//document.getElementById('T:oc_1718626991region1').style.width = '442px'; 
-		
+			
+			document.getElementById('T:oc_1718626991region1:srpglswt1').style.width = '442px';
 			
 		} else {
 			document.getElementById('T:oc_1718626991region1:tspgl2').style.overflow = 'hidden'; 
