@@ -292,8 +292,6 @@ var CMBSU_CSS = {
 			elem.style.width = (elem.style.width.split('px')[0] + 5) + 'px';
 			setTimeout('CMBSU_CSS.quizShow();', 50);
 		}
-		
-		CMBSU_CSS.quizShow();
 
 	},
 	
