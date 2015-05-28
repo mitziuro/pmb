@@ -338,7 +338,7 @@ var CMBSU_CSS = {
 		}
 		
 		$(window).scroll(function() {
-		   if($(window).scrollTop() + $(window).height() == $(document).height() - 30) {
+		   if($(window).scrollTop() + $(window).height() > $(document).height() - 30) {
 
 			   CMBSU_CSS.quizShow(350);
 		   } else {
