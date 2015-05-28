@@ -365,6 +365,15 @@ var CMBSU_CSS = {
 		
 	},
 	
+	createUserDiv: function() {
+		
+		var div = document.createElement("div");
+		document.getElementById('T:pgl1').appendChild(div);
+		div.id = 'user_profile_';
+		div.style= 'position:fixed;height:300px;width:300px;';
+		div.innerHTML = 'hanna are mere';
+	},
+	
 	firstPageModificators: function() {
 		CMBSU_CSS.middleSliderModify();
 		CMBSU_CSS.quizModify();
@@ -379,6 +388,7 @@ var CMBSU_CSS = {
     			CMBSU_CSS.createPageDropEditor();
     			CMBSU_CSS.createSliderSearch();
     			CMBSU_CSS.createScroll();
+    			CMBSU_CSS.createUserDiv();
     			
     		
     	});
