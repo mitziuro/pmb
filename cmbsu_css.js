@@ -181,13 +181,18 @@ var CMBSU_CSS = {
 	},
 	
 	
-	createLoader: function(pmbDiv) {
+	createLoader: function(pmbDiv, height) {
+		
+		var div = document.createElement("div");
+		div.style.textAlign = 'center';
+		
 		var img = document.createElement("img");
 		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
-		img.style.height = '200px';
+		img.style.height = height/2;
 		img.style.width = '200px';
 		
-		pmbDiv.appendChild(img);
+		div.appendChild(img);
+		pmbDiv.appendChild(div);
 	},
 	
 	createFrames: function() {
@@ -207,7 +212,7 @@ var CMBSU_CSS = {
 		       frames[i].innerHTML = frames[i].innerHTML.replace('pmb-iframe', 'iframe');
 		       
 		       try{	
-		       		CMBSU_CSS.createLoader(frames[i]);
+		       		CMBSU_CSS.createLoader(frames[i], frames[i].height);
 		       }catch(ex){}
 		       
 		       if(_loc == null) {
