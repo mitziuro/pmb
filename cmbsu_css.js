@@ -178,14 +178,30 @@ var CMBSU_CSS = {
 		document.getElementById('T:pcust2::content').style.overflow = 'hidden';
 	},
 	
+	
+	createLoader: function(pmbDiv) {
+		var img = document.createElement("img");
+		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif";
+		img.style.height = '200px';
+		img.style.width = '200px';
+		
+		pmbDiv.appendChild(img);
+	},
+	
 	createFrames: function() {
 		 	var frames = document.getElementsByClassName("div-pmb-iframe");
+		 	
+		 	
+		 	
 		 	var _loc = document.location;
 		 	var children = null;
 	    
 		    _loc = _loc.toString().split('?').length == 2 ? _loc.toString().split('?')[1] : null;
 		    
 		    for(var i in frames) {
+		    	
+		       CMBSU_CSS.createLoader(frames[i]);
+		    	
 		       if(frames[i].innerHTML == null) {
 		           continue;
 		       }
