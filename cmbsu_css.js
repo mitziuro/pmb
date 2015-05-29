@@ -411,9 +411,11 @@ var CMBSU_CSS = {
 	        	
 	        	if(data.org != null) {
 	        		div_nume.innerHTML = data.firstName + ' ' + data.lastName + ' din ' + data.org; 
-	        		div.appendChild(div_nume);
+	        	} else {
+	        		div_nume.innerHTML = document.getElementById('T:currUserWcLink:userProfileLink').innerHTML;
 	        	}
 	        	
+	        	div.appendChild(div_nume);
 	        	
 	        }
 	    });
