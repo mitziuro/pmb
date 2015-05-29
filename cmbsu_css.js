@@ -184,14 +184,14 @@ var CMBSU_CSS = {
 	createLoader: function(pmbDiv, height) {
 		
 		var div = document.createElement("div");
-		div.style.textAlign = 'center';
-		div.style.height = '0px';
+		
+		div.className = 'loadingDiv';
 		
 		var img = document.createElement("img");
 		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
 		img.style.top = height/2 + 'px';
-		img.style.position = 'relative';
 		
+		img.className = 'loadingImg';
 		div.appendChild(img);
 		pmbDiv.insertBefore(div, pmbDiv.childNodes[0]);
 	},
