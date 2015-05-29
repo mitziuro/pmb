@@ -298,7 +298,13 @@ var CMBSU_CSS = {
 		var elem = document.getElementById('T:oc_1718626991region1');
 		
 		if(parseInt(elem.style.width.split('px')[0]) > 0) {
-			elem.style.width = (parseInt(elem.style.width.split('px')[0]) - 20) + 'px';
+			
+			if(parseInt(elem.style.width.split('px')[0]) - 20 > 0) {
+				elem.style.width = (parseInt(elem.style.width.split('px')[0]) - 20) + 'px';
+			} else {
+				elem.style.width = '0px';
+			}
+			
 			setTimeout('CMBSU_CSS.quizHide();', 5);
 		} else {
 			elem.style.width = '0px';
