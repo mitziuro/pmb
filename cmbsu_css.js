@@ -191,8 +191,6 @@ var CMBSU_CSS = {
 	createFrames: function() {
 		 	var frames = document.getElementsByClassName("div-pmb-iframe");
 		 	
-		 	
-		 	
 		 	var _loc = document.location;
 		 	var children = null;
 	    
@@ -200,6 +198,7 @@ var CMBSU_CSS = {
 		    
 		    for(var i in frames) {
 		    	
+		    	alert(frames[i]);
 		       CMBSU_CSS.createLoader(frames[i]);
 		    	
 		       if(frames[i].innerHTML == null) {
