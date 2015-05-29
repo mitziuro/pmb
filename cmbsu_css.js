@@ -188,7 +188,6 @@ var CMBSU_CSS = {
 		
 		var img = document.createElement("img");
 		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
-		alert(height);
 		img.style.height = height/2;
 		
 		div.appendChild(img);
@@ -212,6 +211,7 @@ var CMBSU_CSS = {
 		       frames[i].innerHTML = frames[i].innerHTML.replace('pmb-iframe', 'iframe');
 		       
 		       try{	
+		    	   alert($(frames[i]).outerHeight());
 		       		CMBSU_CSS.createLoader(frames[i], frames[i].height);
 		       }catch(ex){}
 		       
