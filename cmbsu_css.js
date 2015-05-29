@@ -188,10 +188,11 @@ var CMBSU_CSS = {
 		
 		var img = document.createElement("img");
 		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
-		img.style.height = height/2 + 'px';
+		img.style.top = height/2 + 'px';
+		img.style.position = 'relative';
 		
 		div.appendChild(img);
-		pmbDiv.appendChild(div);
+		pmbDiv.insertBefore(div, pmbDiv.childNodes[0]);
 	},
 	
 	createFrames: function() {
