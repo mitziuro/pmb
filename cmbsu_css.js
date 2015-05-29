@@ -198,15 +198,17 @@ var CMBSU_CSS = {
 		    
 		    for(var i in frames) {
 		    	
-		       try{	
-		       		CMBSU_CSS.createLoader(frames[i]);
-		       }catch(ex){}
+		      
 		       
 		       if(frames[i].innerHTML == null) {
 		           continue;
 		       }
 		       
 		       frames[i].innerHTML = frames[i].innerHTML.replace('pmb-iframe', 'iframe');
+		       
+		       try{	
+		       		CMBSU_CSS.createLoader(frames[i]);
+		       }catch(ex){}
 		       
 		       if(_loc == null) {
 		            continue;
