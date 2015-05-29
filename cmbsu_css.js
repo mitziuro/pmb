@@ -181,7 +181,7 @@ var CMBSU_CSS = {
 	
 	createLoader: function(pmbDiv) {
 		var img = document.createElement("img");
-		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif";
+		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
 		img.style.height = '200px';
 		img.style.width = '200px';
 		
