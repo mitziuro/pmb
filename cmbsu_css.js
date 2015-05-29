@@ -1,6 +1,8 @@
+
+
 var CMBSU_CSS = {
 
-	_Y: null,
+	_ANIMATION_SPINLOCK: 0,
 	
 	createPageDropEditor: function() {
 
@@ -287,6 +289,12 @@ var CMBSU_CSS = {
 	
 	quizHide: function() {
 		
+		if(CMBSU_CSS._ANIMATION_SPINLOCK == 1) {
+			return;
+		}
+		
+		CMBSU_CSS._ANIMATION_SPINLOCK = 2;
+		
 		var elem = document.getElementById('T:oc_1718626991region1');
 		
 		if(parseInt(elem.style.width.split('px')[0]) > 0) {
@@ -294,11 +302,20 @@ var CMBSU_CSS = {
 			setTimeout('CMBSU_CSS.quizHide();', 5);
 		} else {
 			elem.style.width = '0px';
+			CMBSU_CSS._ANIMATION_SPINLOCK = 0;
 		}
+		
+		CMBSU_CSS._ANIMATION_SPINLOCK = false;
 		
 	},
 	
 	quizShow: function(_width) {
+		
+		if(CMBSU_CSS._ANIMATION_SPINLOCK == 2) {
+			return;
+		}
+		
+		CMBSU_CSS._ANIMATION_SPINLOCK = 1;
 		
 		var elem = document.getElementById('T:oc_1718626991region1');
 	
@@ -307,6 +324,7 @@ var CMBSU_CSS = {
 			setTimeout('CMBSU_CSS.quizShow(' + _width + ');', 5);
 		} else {
 			elem.style.width = _width + 'px';
+			CMBSU_CSS._ANIMATION_SPINLOCK = 0;
 		}
 
 	},
