@@ -390,8 +390,15 @@ var CMBSU_CSS = {
 		
 		document.getElementById('T:pcust29::content').style.display = 'none';
 		
-		div.appendChild(document.getElementById('T:wcAdminLink:adminLink'));
-		div.appendChild(document.getElementById('T:wcLogoutLink:logoutLink'));
+		if(document.getElementById('T:wcAdminLink:adminLink') != null) {
+			div.appendChild(document.getElementById('T:wcAdminLink:adminLink'));
+		}
+		
+		
+		if(document.getElementById('T:wcLogoutLink:logoutLink')) {
+			div.appendChild(document.getElementById('T:wcLogoutLink:logoutLink'));
+		}
+		
 		
 	},
 	
