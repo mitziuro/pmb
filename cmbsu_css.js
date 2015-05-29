@@ -383,6 +383,9 @@ var CMBSU_CSS = {
 	
 	createUserDiv: function() {
 		
+		if(document.getElementById('T:wcLogoutLink:logoutLink') == null) {
+			return;
+		}
 		var div = document.createElement("div");
 		document.getElementById('T:pgl1').appendChild(div);
 		div.id = 'user_profile_';
@@ -395,7 +398,7 @@ var CMBSU_CSS = {
 		}
 		
 		
-		if(document.getElementById('T:wcLogoutLink:logoutLink')) {
+		if(document.getElementById('T:wcLogoutLink:logoutLink') != null) {
 			div.appendChild(document.getElementById('T:wcLogoutLink:logoutLink'));
 		}
 		
