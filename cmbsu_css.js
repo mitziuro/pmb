@@ -198,8 +198,6 @@ var CMBSU_CSS = {
 		    
 		    for(var i in frames) {
 		    	
-		      
-		       
 		       if(frames[i].innerHTML == null) {
 		           continue;
 		       }
@@ -403,6 +401,22 @@ var CMBSU_CSS = {
 		if(document.getElementById('T:wcLogoutLink:logoutLink') != null) {
 			div.appendChild(document.getElementById('T:wcLogoutLink:logoutLink'));
 		}
+		
+		$.ajax({ 
+	        type: 'GET', 
+	        url: CMBSU_COMPANION + 'user', 
+	        data: {}, 
+	        success: function (data) { 
+	        	var div_nume = document.createElement("div");
+	        	
+	        	if(data.org != null) {
+	        		div_nume.innerHTML = data.firstName + ' ' + data.lastName + ' din ' + data.org; 
+	        		div.appendChild(div_nume);
+	        	}
+	        	
+	        	
+	        }
+	    });
 		
 		
 	},
