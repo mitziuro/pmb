@@ -211,8 +211,7 @@ var CMBSU_CSS = {
 		       frames[i].innerHTML = frames[i].innerHTML.replace('pmb-iframe', 'iframe');
 		       
 		       try{	
-		    	   alert($(frames[i]).outerHeight());
-		       		CMBSU_CSS.createLoader(frames[i], frames[i].height);
+		       		CMBSU_CSS.createLoader(frames[i], $(frames[i]).outerHeight());
 		       }catch(ex){}
 		       
 		       if(_loc == null) {
