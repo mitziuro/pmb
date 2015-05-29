@@ -185,6 +185,7 @@ var CMBSU_CSS = {
 		
 		var div = document.createElement("div");
 		div.style.textAlign = 'center';
+		div.style.height = '0px';
 		
 		var img = document.createElement("img");
 		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
