@@ -198,8 +198,7 @@ var CMBSU_CSS = {
 		    
 		    for(var i in frames) {
 		    	
-		    	alert(frames[i]);
-		       CMBSU_CSS.createLoader(frames[i]);
+		       CMBSU_CSS.createLoader(document.getElementById(frames[i].id));
 		    	
 		       if(frames[i].innerHTML == null) {
 		           continue;
