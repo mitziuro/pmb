@@ -189,7 +189,6 @@ var CMBSU_CSS = {
 		var img = document.createElement("img");
 		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
 		img.style.height = height/2;
-		img.style.width = '200px';
 		
 		div.appendChild(img);
 		pmbDiv.appendChild(div);
