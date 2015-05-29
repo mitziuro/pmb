@@ -217,6 +217,7 @@ var CMBSU_CSS = {
 		
 		img.className = 'loadingImg';
 		div.appendChild(img);
+		alert(pmbDiv.childNodes[0]);
 		pmbDiv.childNodes[0].onLoad = function() {
 			alert(55);
 		};
