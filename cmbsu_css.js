@@ -211,12 +211,17 @@ var CMBSU_CSS = {
 						</style>';
 
 		var img = document.createElement("img");
+		img.id = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
 		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
 		img.style.top = height/2 + 'px';
 		
 		img.className = 'loadingImg';
 		div.appendChild(img);
+		pmbDiv.childNodes[0].onLoad = function() {
+			alert(55);
+		};
 		pmbDiv.insertBefore(div, pmbDiv.childNodes[0]);
+		
 	},
 	
 	createFrames: function() {
@@ -229,6 +234,8 @@ var CMBSU_CSS = {
 		    
 		    for(var i in frames) {
 		    	
+
+		      	
 		       if(frames[i].innerHTML == null) {
 		           continue;
 		       }
