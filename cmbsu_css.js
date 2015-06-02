@@ -214,6 +214,7 @@ var CMBSU_CSS = {
 						\
 						</style>';
 
+		alert(5);
 		alert(pmbDiv.childNodes[1].id);
 		var img = document.createElement("img");
 		var random = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
