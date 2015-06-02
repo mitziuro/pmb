@@ -224,7 +224,7 @@ var CMBSU_CSS = {
 	
 	hideLoader: function() {
 		alert(4);
-	}
+	},
 	
 	createFrames: function() {
 		 	var frames = document.getElementsByClassName("div-pmb-iframe");
