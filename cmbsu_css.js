@@ -329,7 +329,6 @@ var CMBSU_CSS = {
 		}
 		
 		CMBSU_CSS._ANIMATION_SPINLOCK = 2;
-		
 		var elem = document.getElementById('T:oc_1718626991region1');
 		
 		if(parseInt(elem.style.width.split('px')[0]) > 0) {
