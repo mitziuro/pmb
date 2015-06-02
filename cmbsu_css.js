@@ -221,7 +221,7 @@ var CMBSU_CSS = {
 			random = pmbDiv.childNodes[length].id;
 		}
 		
-		alert(random);
+		alert(random.length);
 		
 		img.id = random + '_img';
 		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
