@@ -224,7 +224,7 @@ var CMBSU_CSS = {
 	},
 	
 	hideLoader: function(iframe) {
-		document.getElementById(iframe.id + '_img').style.visibility = 'hidden';
+		document.getElementById(iframe.id + '_img').style.display = 'none';
 		iframe.style.visibility = 'visible';
 	},
 	
