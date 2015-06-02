@@ -183,10 +183,7 @@ var CMBSU_CSS = {
 	
 	createLoader: function(pmbDiv, height) {
 		
-		if(pmbDiv.childNodes.length > 1) {
-			alert(pmbDiv.childNodes.length);
-			alert(pmbDiv.childNodes[0]);
-			alert(pmbDiv.childNodes[1]);
+		if(pmbDiv.childNodes.length > 2) {
 			return;
 		}
 		
