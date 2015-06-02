@@ -228,10 +228,9 @@ var CMBSU_CSS = {
 	},
 	
 	hideLoader: function(iframe) {
-		alert(5);
+		alert(iframe.id);
 		if(iframe == null) {
 			iframe = CMBSU_CSS._CURRENT_IFRAME;
-			
 		} 
 		
 		CMBSU_CSS._CURRENT_IFRAME = iframe;
