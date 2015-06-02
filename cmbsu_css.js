@@ -183,6 +183,10 @@ var CMBSU_CSS = {
 	
 	createLoader: function(pmbDiv, height) {
 		
+		if(pmbDiv.childNodes.length > 1) {
+			return;
+		}
+		
 		var div = document.createElement("div");
 		
 		div.className = 'loadingDiv';
