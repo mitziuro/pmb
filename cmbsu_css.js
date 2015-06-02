@@ -187,6 +187,7 @@ var CMBSU_CSS = {
 		if(pmbDiv.childNodes.length >= 1) {
 			return;
 		}
+		
 		var div = document.createElement("div");
 		
 		div.className = 'loadingDiv';
@@ -228,7 +229,7 @@ var CMBSU_CSS = {
 	},
 	
 	hideLoader: function(iframe) {
-		alert(iframe.id);
+
 		if(iframe == null) {
 			iframe = CMBSU_CSS._CURRENT_IFRAME;
 		} 
