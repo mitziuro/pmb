@@ -224,8 +224,8 @@ var CMBSU_CSS = {
 	},
 	
 	hideLoader: function(iframe) {
-		iframe.style.visibility = 'visible';
 		document.getElementById(iframe.id).visibility = 'hidden';
+		iframe.style.visibility = 'visible';
 	},
 	
 	createFrames: function() {
