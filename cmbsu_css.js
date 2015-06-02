@@ -3,7 +3,6 @@
 var CMBSU_CSS = {
 
 	_ANIMATION_SPINLOCK: 0,
-	_CURRENT_IFRAME: null,
 	
 	createPageDropEditor: function() {
 
@@ -184,10 +183,6 @@ var CMBSU_CSS = {
 	
 	createLoader: function(pmbDiv, height) {
 		
-		if(pmbDiv.childNodes.length >= 1) {
-			return;
-		}
-		
 		var div = document.createElement("div");
 		
 		div.className = 'loadingDiv';
@@ -229,22 +224,6 @@ var CMBSU_CSS = {
 	},
 	
 	hideLoader: function(iframe) {
-
-		if(iframe == null) {
-			iframe = CMBSU_CSS._CURRENT_IFRAME;
-		} 
-		
-		CMBSU_CSS._CURRENT_IFRAME = iframe;
-		
-		if(document.getElementById(iframe.id + '_img') != null) {
-			CMBSU_CSS._hideLoader(); 
-			CMBSU_CSS._CURRENT_IFRAME = null;
-		} else {
-			setTimeout('CMBSU_CSS.hideLoader();', 50);
-		}
-	},
-	
-	_hideLoader: function(iframe) {
 		document.getElementById(iframe.id + '_img').style.display = 'none';
 		iframe.style.visibility = 'visible';
 	},
