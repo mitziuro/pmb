@@ -187,7 +187,7 @@ var CMBSU_CSS = {
 			return;
 		}
 		
-		alert(7);
+		alert(87);
 		alert(pmbDiv.childNodes.length);
 		
 		var div = document.createElement("div");
