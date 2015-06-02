@@ -212,6 +212,10 @@ var CMBSU_CSS = {
 
 		var img = document.createElement("img");
 		var random = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
+		if(pmbDiv.childNodes[0].id != null && pmbDiv.childNodes[0].id != '') {
+			random = pmbDiv.childNodes[0].id;
+		}
+		
 		img.id = random + '_img';
 		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
 		img.style.top = height/2 + 'px';
@@ -219,17 +223,12 @@ var CMBSU_CSS = {
 		img.className = 'loadingImg';
 		div.appendChild(img);
 		pmbDiv.childNodes[0].id = random;
+		
 		pmbDiv.insertBefore(div, pmbDiv.childNodes[0]);
 		
 	},
 	
 	hideLoader: function(iframe) {
-		alert(iframe.id);
-		if(iframe.id == null || iframe.id == '') {
-			setTimeout('CMBSU_CSS.hideLoader();', 50);
-			return;
-		}
-		
 		document.getElementById(iframe.id + '_img').style.display = 'none';
 		alert(iframe.style.visibility);
 		iframe.style.visibility = 'visible !important';
