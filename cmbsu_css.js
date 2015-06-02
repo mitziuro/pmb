@@ -231,6 +231,7 @@ var CMBSU_CSS = {
 		}
 		
 		document.getElementById(iframe.id + '_img').style.display = 'none';
+		alert(iframe.style.visibility);
 		iframe.style.visibility = 'visible !important';
 	},
 	
