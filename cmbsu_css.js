@@ -224,7 +224,7 @@ var CMBSU_CSS = {
 	},
 	
 	hideLoader: function(iframe) {
-		
+		alert(iframe.id);
 		if(iframe.id == null || iframe.id == '') {
 			setTimeout('CMBSU_CSS.hideLoader();', 50);
 			return;
