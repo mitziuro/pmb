@@ -224,7 +224,14 @@ var CMBSU_CSS = {
 	},
 	
 	hideLoader: function(iframe) {
-
+		if(document.getElementById(iframe.id + '_img') != null) {
+			CMBSU_CSS._hideLoader(); 
+		} else {
+			setTimeout('CMBSU_CSS.hideLoader();', 50);
+		}
+	},
+	
+	_hideLoader: function(iframe) {
 		document.getElementById(iframe.id + '_img').style.display = 'none';
 		iframe.style.visibility = 'visible';
 	},
