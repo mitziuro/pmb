@@ -214,12 +214,11 @@ var CMBSU_CSS = {
 						\
 						</style>';
 
-		alert(5);
-		alert(pmbDiv.childNodes[1].id);
+		var length = pmbDiv.childNodes.length - 1;
 		var img = document.createElement("img");
 		var random = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
-		if(pmbDiv.childNodes[0].id != null && pmbDiv.childNodes[0].id != '') {
-			random = pmbDiv.childNodes[0].id;
+		if(pmbDiv.childNodes[length].id != null && pmbDiv.childNodes[length].id != '') {
+			random = pmbDiv.childNodes[length].id;
 		}
 		
 		img.id = random + '_img';
@@ -228,9 +227,9 @@ var CMBSU_CSS = {
 		
 		img.className = 'loadingImg';
 		div.appendChild(img);
-		pmbDiv.childNodes[0].id = random;
+		pmbDiv.childNodes[length].id = random;
 		
-		pmbDiv.insertBefore(div, pmbDiv.childNodes[0]);
+		pmbDiv.insertBefore(div, pmbDiv.childNodes[length]);
 		
 	},
 	
