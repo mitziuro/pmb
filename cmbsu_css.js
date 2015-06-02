@@ -232,9 +232,7 @@ var CMBSU_CSS = {
 		    _loc = _loc.toString().split('?').length == 2 ? _loc.toString().split('?')[1] : null;
 		    
 		    for(var i in frames) {
-		    	
 
-		      	
 		       if(frames[i].innerHTML == null) {
 		           continue;
 		       }
