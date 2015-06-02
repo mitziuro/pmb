@@ -186,6 +186,9 @@ var CMBSU_CSS = {
 			return;
 		}
 		
+		alert(7);
+		alert(pmbDiv.childNodes.length);
+		
 		var div = document.createElement("div");
 		
 		div.className = 'loadingDiv';
@@ -219,8 +222,6 @@ var CMBSU_CSS = {
 		if(pmbDiv.childNodes[length].id != null && pmbDiv.childNodes[length].id != '') {
 			random = pmbDiv.childNodes[length].id;
 		}
-		
-		alert(random.length);
 		
 		img.id = random + '_img';
 		img.src = CMBSU_URL + 'sigla%20-%20PMB.gif';
