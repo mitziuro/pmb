@@ -238,6 +238,7 @@ var CMBSU_CSS = {
 		
 		if(document.getElementById(iframe.id + '_img') != null) {
 			CMBSU_CSS._hideLoader(); 
+			CMBSU_CSS._CURRENT_IFRAME = null;
 		} else {
 			setTimeout('CMBSU_CSS.hideLoader();', 50);
 		}
