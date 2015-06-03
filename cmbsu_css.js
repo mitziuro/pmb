@@ -183,7 +183,7 @@ var CMBSU_CSS = {
 	
 	createLoader: function(pmbDiv, height) {
 
-		if(document.getElementsByName('loadingDiv').length > 0) {
+		if($('.loadingDiv').length > 0) {
 			return;
 		}
 		
