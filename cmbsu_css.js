@@ -462,11 +462,13 @@ var CMBSU_CSS = {
 		document.getElementById('T:pcust29::content').style.display = 'none';
 		
 		if(document.getElementById('T:wcAdminLink:adminLink') != null) {
+			document.getElementById('T:wcAdminLink:adminLink').className += ' adminDIV';
 			div.appendChild(document.getElementById('T:wcAdminLink:adminLink'));
 		}
 		
 		
 		if(document.getElementById('T:wcLogoutLink:logoutLink') != null) {
+			document.getElementById('T:wcLogoutLink:logoutLink').className += ' logoutDIV';
 			div.appendChild(document.getElementById('T:wcLogoutLink:logoutLink'));
 		}
 		
