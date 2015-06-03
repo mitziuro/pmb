@@ -489,6 +489,11 @@ var CMBSU_CSS = {
 	        		div_nume.innerHTML += '<div class="lastName_DIV">' + data.lastName + '</div>';
 	        		div_nume.innerHTML += '<div class="orgName_DIV">' + data.org + '</div>';
 	        		
+	        		var a = document.createElement("a");
+	        		a.href = '/webcenter/portal/system/Profile';
+	        		a.className = 'personal_DIV';
+	        		div.appendChild(a); 
+	        		
 	        	} else {
 	        		div_nume.innerHTML += '<div class="firstName_DIV">' +  document.getElementById('T:currUserWcLink:userProfileLink').innerHTML + '</div>';
 
