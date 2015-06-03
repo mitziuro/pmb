@@ -500,6 +500,7 @@ var CMBSU_CSS = {
 	        		var a = document.createElement("a");
 	        		a.href = '/webcenter/portal/system/Profile';
 	        		a.className = 'personal_DIV';
+	        		a.innerHTML = 'Personal';
 	        		div.appendChild(a); 
 	        	}
 	        	
