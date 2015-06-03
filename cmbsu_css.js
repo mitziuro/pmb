@@ -476,11 +476,12 @@ var CMBSU_CSS = {
 	        data: {}, 
 	        success: function (data) { 
 	        	var div_nume = document.createElement("div");
+	        	div_nume.innerHTML = '<img src="' + CMBSU_URL + 'SMALL.png"></img>';
 	        	
 	        	if(data.org != null && data.org != 'null') {
-	        		div_nume.innerHTML = data.firstName + ' ' + data.lastName + ' din ' + data.org; 
+	        		div_nume.innerHTML += data.firstName + ' ' + data.lastName + ' din ' + data.org; 
 	        	} else {
-	        		div_nume.innerHTML = '<div style="text-decoration:none !important;">' +  document.getElementById('T:currUserWcLink:userProfileLink').innerHTML + '</div>';
+	        		div_nume.innerHTML += '<div style="text-decoration:none !important;">' +  document.getElementById('T:currUserWcLink:userProfileLink').innerHTML + '</div>';
 	        	}
 	        	
 	        	div.appendChild(div_nume);
