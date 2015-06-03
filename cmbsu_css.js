@@ -476,12 +476,17 @@ var CMBSU_CSS = {
 	        data: {}, 
 	        success: function (data) { 
 	        	var div_nume = document.createElement("div");
-	        	div_nume.innerHTML = '<img style="position: relative;left: -75px;top: -4px;" src="' + CMBSU_URL + 'SMALL.png"></img>';
+	        	div_nume.innerHTML = '<img class="img_DIV" src="' + CMBSU_URL + 'SMALL.png"></img>';
 	        	
 	        	if(data.org != null && data.org != 'null') {
-	        		div_nume.innerHTML += data.firstName + ' ' + data.lastName + ' din ' + data.org; 
+	        		div_nume.innerHTML += '<div class="firstName_DIV">' + data.firstName + '</div>';
+	        		div_nume.innerHTML += '<div class="lastName_DIV">' + data.lastName + '</div>';
+	        		div_nume.innerHTML += '<div class="orgName_DIV">' + data.org + '</div>';
+	        		
 	        	} else {
-	        		div_nume.innerHTML += '<div style="text-decoration:none !important;">' +  document.getElementById('T:currUserWcLink:userProfileLink').innerHTML + '</div>';
+	        		div_nume.innerHTML += '<div class="firstName_DIV">' +  document.getElementById('T:currUserWcLink:userProfileLink').innerHTML + '</div>';
+	        		div_nume.innerHTML += '<div class="lastName_DIV">' + 'asdasd' + '</div>';
+	        		div_nume.innerHTML += '<div class="orgName_DIV">' + 'asdasdasda' + '</div>';
 	        	}
 	        	
 	        	div.appendChild(div_nume);
