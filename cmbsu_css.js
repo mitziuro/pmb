@@ -492,16 +492,12 @@ var CMBSU_CSS = {
 	        		var a = document.createElement("a");
 	        		a.href = '/webcenter/portal/system/Profile';
 	        		a.className = 'personal_DIV';
+	        		a.innerHTML = 'Personal';
 	        		div.appendChild(a); 
 	        		
 	        	} else {
 	        		div_nume.innerHTML += '<div class="firstName_DIV">' +  document.getElementById('T:currUserWcLink:userProfileLink').innerHTML + '</div>';
 
-	        		var a = document.createElement("a");
-	        		a.href = '/webcenter/portal/system/Profile';
-	        		a.className = 'personal_DIV';
-	        		a.innerHTML = 'Personal';
-	        		div.appendChild(a); 
 	        	}
 	        	
 	        	div.appendChild(div_nume);
