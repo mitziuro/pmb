@@ -485,8 +485,7 @@ var CMBSU_CSS = {
 	        		
 	        	} else {
 	        		div_nume.innerHTML += '<div class="firstName_DIV">' +  document.getElementById('T:currUserWcLink:userProfileLink').innerHTML + '</div>';
-	        		div_nume.innerHTML += '<div class="lastName_DIV">' + 'asdasd' + '</div>';
-	        		div_nume.innerHTML += '<div class="orgName_DIV">' + 'asdasdasda' + '</div>';
+
 	        	}
 	        	
 	        	div.appendChild(div_nume);
