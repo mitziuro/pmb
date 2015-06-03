@@ -477,7 +477,7 @@ var CMBSU_CSS = {
 	        success: function (data) { 
 	        	var div_nume = document.createElement("div");
 	        	
-	        	if(data.org != null) {
+	        	if(data.org != null && data.org != 'null') {
 	        		div_nume.innerHTML = data.firstName + ' ' + data.lastName + ' din ' + data.org; 
 	        	} else {
 	        		div_nume.innerHTML = document.getElementById('T:currUserWcLink:userProfileLink').innerHTML;
