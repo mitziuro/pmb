@@ -528,6 +528,12 @@ var CMBSU_CSS = {
 		if(document.getElementById('T:theTaskFlow:dsr1:srMain::f') != null) {
 			document.getElementById('T:theTaskFlow:dsr1:srMain::f').style.display = 'none';
 		}
+		
+		if(document.getElementById('T:theTaskFlow:dsr1:srMain::d') != null) {
+			document.getElementById('T:theTaskFlow:dsr1:srMain::d').style.display = 'none';
+		}
+		
+		
     },
  	
     init: function() {
