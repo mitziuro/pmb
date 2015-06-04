@@ -524,7 +524,7 @@ var CMBSU_CSS = {
 	
 	},
 	
-	searchViewer: function() 
+	searchViewer: function()  {
 		if(document.getElementById('T:theTaskFlow:dsr1:srMain::f') != null) {
 			document.getElementById('T:theTaskFlow:dsr1:srMain::f').style.display = 'none';
 		}
