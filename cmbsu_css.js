@@ -294,7 +294,7 @@ var CMBSU_CSS = {
 	},
 	
 	writeAlert: function(type, content) {
-		var div = document.createElement("div");
+		/*var div = document.createElement("div");
 		
 		//if(type == 0) {
 			return;
@@ -313,7 +313,17 @@ var CMBSU_CSS = {
 		
 		div.style.position = 'fixed';
 		document.getElementById('f1').insertBefore(div, document.getElementById('f1').firstChild);   
-		//document.getElementById('T:gtbpgl0').insertBefore(div, document.getElementById('T:gtbpgl0').firstChild);    
+		//document.getElementById('T:gtbpgl0').insertBefore(div, document.getElementById('T:gtbpgl0').firstChild);  
+		*/
+		
+		if(type == 0) {
+			return;
+		}
+		
+		document.getElementById('T:gtbrspmxgl2').childNodes[0].innerHTML = content;
+		document.getElementById('T:gtbrspmxgl2').onclick = function() {
+			window.location = 'Sesizare?alert=true';
+		};
 		
 	},
 	
