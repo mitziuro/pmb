@@ -321,7 +321,7 @@ var CMBSU_CSS = {
 		}
 		
 		document.getElementById('T:gtbrspmxgl2').childNodes[0].innerHTML = content;
-		document.getElementById('T:gtbrspmxgl2').href = 'Test componente/Contact/Sesizari?alert=true';
+		document.getElementById('T:gtbrspmxgl2').href = 'portal/pmbext/Test componente/Contact/Sesizari';
 
 		
 	},
