@@ -523,10 +523,19 @@ var CMBSU_CSS = {
 		CMBSU_CSS.quizModify();
 	
 	},
+	
+	searchViewer: function() 
+		if(document.getElementById('T:theTaskFlow:dsr1:srMain::f') != null) {
+			document.getElementById('T:theTaskFlow:dsr1:srMain::f').style.display = 'none';
+		}
+    },
  	
     init: function() {
    
     	$( document ).ready(function() {
+    		   
+    		    CMBSU_CSS.searchViewer();
+    		
     			CMBSU_CSS.createLayout();
     			CMBSU_CSS.createLayoutIE();
     			CMBSU_CSS.createPageDropEditor();
