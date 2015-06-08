@@ -329,6 +329,7 @@ var CMBSU_CSS = {
 	        url: CMBSU_COMPANION + 'alert', 
 	        data: {}, 
 	        success: function (data) {
+	        	alert(data.display);
 	        	if(data.display == 1) {
 	        		CMBSU_CSS.writeAlert(data.type, data.message);
 	        	}
