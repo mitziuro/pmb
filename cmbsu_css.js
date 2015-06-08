@@ -300,26 +300,16 @@ var CMBSU_CSS = {
 		
 		if(type == 1) {
 			div.className= "alert_div";
-			//div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="' + CMBSU_URL + 'alert-sign.gif"/></div>';
+			
 		} else if(type == 2) {
 			div.className= "warning_div";
-			//div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="' + CMBSU_URL + 'warning-sign.gif"/></div>';
+			
 		}
 		
 		div.innerHTML += '<div class="alert_content">' + content + '</div>';
 		
 		div.style.position = 'relative';
-		//document.getElementById('f1').insertBefore(div, document.getElementById('f1').firstChild);   
-		//document.getElementById('T:gtbpgl0').insertBefore(div, document.getElementById('T:gtbpgl0').firstChild);  
-		
-		/*if(type == 0) {
-			return;
-		}*/
-		
-		//document.getElementById('T:gtbrspmxgl2').childNodes[0].innerHTML = content;
-
-		//document.getElementById('T:gtbrspmxgl2').href = 'pmbext/Test componente/Contact/Sesizari?alert=true';
-
+	
 		div.onclick = function() {
 			window.location = 'pmbext/Test componente/Contact/Sesizari?alert=true';
 		};
