@@ -295,8 +295,9 @@ var CMBSU_CSS = {
 	
 	writeAlert: function(type, content) {
 
-		var div = document.getElementById('alert_div_main');
-
+		var div = document.createElement('div');
+		div.id = 'alert_div_main';
+		
 		if(type == 1) {
 			div.className= "alert_div";
 			//div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="' + CMBSU_URL + 'alert-sign.gif"/></div>';
@@ -322,6 +323,9 @@ var CMBSU_CSS = {
 		div.onclick = function() {
 			window.location = 'pmbext/Test componente/Contact/Sesizari?alert=true';
 		};
+		
+		
+		document.getElementById('T:pgl8268332567').childNodes[0].insertBefore(div, document.getElementById('T:pgl8268332567').childNodes[0].childNodes[0]); 
 		
 	},
 	
