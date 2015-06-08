@@ -294,11 +294,9 @@ var CMBSU_CSS = {
 	},
 	
 	writeAlert: function(type, content) {
-		/*var div = document.createElement("div");
-		
-		//if(type == 0) {
-			return;
-		//}
+		//var div = document.createElement("div");
+		var div = document.getElementById('alert_div_main');
+	
 		
 		if(type == 1) {
 			div.className= "alert_div";
@@ -314,7 +312,6 @@ var CMBSU_CSS = {
 		div.style.position = 'fixed';
 		document.getElementById('f1').insertBefore(div, document.getElementById('f1').firstChild);   
 		//document.getElementById('T:gtbpgl0').insertBefore(div, document.getElementById('T:gtbpgl0').firstChild);  
-		*/
 		
 		if(type == 0) {
 			return;
