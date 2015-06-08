@@ -319,6 +319,9 @@ var CMBSU_CSS = {
 
 		//document.getElementById('T:gtbrspmxgl2').href = 'pmbext/Test componente/Contact/Sesizari?alert=true';
 
+		div.onclick = function() {
+			window.location = 'pmbext/Test componente/Contact/Sesizari?alert=true';
+		};
 		
 	},
 	
