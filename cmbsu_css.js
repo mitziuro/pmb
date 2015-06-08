@@ -306,7 +306,6 @@ var CMBSU_CSS = {
 			div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="' + CMBSU_URL + 'warning-sign.gif"/></div>';
 		}
 		
-		
 		div.innerHTML += '<div class="alert_content">' + content + '</div>';
 		
 		div.style.position = 'fixed';
