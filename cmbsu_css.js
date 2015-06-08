@@ -296,7 +296,7 @@ var CMBSU_CSS = {
 	writeAlert: function(type, content) {
 
 		var div = document.getElementById('alert_div_main');
-	
+	alert('type' + type);
 		if(type == 1) {
 			div.className= "alert_div";
 			//div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="' + CMBSU_URL + 'alert-sign.gif"/></div>';
