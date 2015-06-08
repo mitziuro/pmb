@@ -39,6 +39,8 @@ var swiper_anno = new Swiper('.anno-container', {
     bulletClass: 'anno-pagination-bullet',
     bulletActiveClass: 'anno-pagination-bullet-active',
     paginationHiddenClass: 'anno-pagination-hidden',
-    buttonDisabledClass: 'anno-button-disabled'
+    buttonDisabledClass: 'anno-button-disabled',
+    nextButton: '.anno-button-next',
+    prevButton: '.anno-button-prev'
 });
 
