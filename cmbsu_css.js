@@ -297,11 +297,11 @@ var CMBSU_CSS = {
 		//var div = document.createElement("div");
 		var div = document.getElementById('alert_div_main');
 	
-		
-		//if(type == 1) {
+		div.className= "alert_div";
+		/*if(type == 1) {
 			div.className= "alert_div";
-			div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="' + CMBSU_URL + 'alert-sign.gif"/></div>';
-		/*} else if(type == 2) {
+			//div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="' + CMBSU_URL + 'alert-sign.gif"/></div>';
+		} else if(type == 2) {
 			div.className= "warning_div";
 			div.innerHTML = '<div style="float:left"><img style="height:40px;padding-top:5px;" src="' + CMBSU_URL + 'warning-sign.gif"/></div>';
 		}*/
