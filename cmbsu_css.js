@@ -312,9 +312,9 @@ var CMBSU_CSS = {
 		document.getElementById('f1').insertBefore(div, document.getElementById('f1').firstChild);   
 		//document.getElementById('T:gtbpgl0').insertBefore(div, document.getElementById('T:gtbpgl0').firstChild);  
 		
-		if(type == 0) {
+		/*if(type == 0) {
 			return;
-		}
+		}*/
 		
 		//document.getElementById('T:gtbrspmxgl2').childNodes[0].innerHTML = content;
 
