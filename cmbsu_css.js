@@ -308,8 +308,8 @@ var CMBSU_CSS = {
 		
 		div.innerHTML += '<div class="alert_content">' + content + '</div>';
 		
-		div.style.position = 'fixed';
-		document.getElementById('f1').insertBefore(div, document.getElementById('f1').firstChild);   
+		div.style.position = 'relative';
+		//document.getElementById('f1').insertBefore(div, document.getElementById('f1').firstChild);   
 		//document.getElementById('T:gtbpgl0').insertBefore(div, document.getElementById('T:gtbpgl0').firstChild);  
 		
 		/*if(type == 0) {
