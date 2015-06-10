@@ -549,11 +549,11 @@ var CMBSU_CSS = {
     	});
     	
     	CMBSU_CSS.createFrames();
-    	CMBSU_CSS.getAlert();
     	CMBSU_CSS.buildLeftMenu();
     	
     	if(document.getElementById('firstPage') != null){
     		CMBSU_CSS.firstPageModificators();
+    		CMBSU_CSS.getAlert();
     	}
     }
 };
