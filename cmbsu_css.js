@@ -561,6 +561,9 @@ var CMBSU_CSS = {
    
     	$( document ).ready(function() {
     		   
+        	CMBSU_CSS.hideSearch();
+        	CMBSU_CSS.createSearchResults();
+        	
     		    CMBSU_CSS.searchViewer();
     			CMBSU_CSS.createLayout();
     			CMBSU_CSS.createLayoutIE();
@@ -572,8 +575,7 @@ var CMBSU_CSS = {
     		
     	});
     	
-    	CMBSU_CSS.hideSearch();
-    	CMBSU_CSS.createSearchResults();
+
     	CMBSU_CSS.createFrames();
     	CMBSU_CSS.buildLeftMenu();
     	
