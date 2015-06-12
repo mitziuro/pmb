@@ -540,7 +540,7 @@ var CMBSU_CSS = {
     createSearchResults: function() {
     
     	$('.x1ys').each(function( index ) {
-    		 
+    		 alert(($(this).id);
     		if($(this).id.indexOf('T:theTaskFlow') >-1) {
     			$(this).css('display', 'none');
     		}
@@ -549,7 +549,8 @@ var CMBSU_CSS = {
     
     hideSearch: function() {
     	$('.AFBrandingBarTitle').each(function( index ) {
-    		if($(this).html().indexOf('intern') >-1) {
+    		 alert(($(this).id);
+    		if($(this).html().indexOf('privat') >-1) {
     			$('#T:searchbox').css('display', 'none'); 
     		}
     	});
