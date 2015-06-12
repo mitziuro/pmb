@@ -539,22 +539,20 @@ var CMBSU_CSS = {
     
     createSearchResults: function() {
     
-    	$('.x1ys').each(function( index ) {
-    		 alert($(this).id);
-    		if($(this).id.indexOf('T:theTaskFlow') >-1) {
-    			$(this).css('display', 'none');
-    		}
-    	});
-    },
-    
-    hideSearch: function() {
-    
-    	
     	for(var i=0; i<9 ;i++) {
     		if(document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i) != null) {
     			document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i).style.display = 'none;'
     		}	
     	}
+    },
+    
+    hideSearch: function() {
+    
+    	
+    	if(document.getElementById('T:gtbrspmxgl2').innerHTML.indexOf('privat') > -1) {
+    		document.getElementById('T:searchbox').stylle.display = 'none'; 
+    	}
+    	
     		
   
     	
