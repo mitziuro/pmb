@@ -552,7 +552,7 @@ var CMBSU_CSS = {
     		if($(this).html().indexOf('intern') >-1) {
     			$('#T:searchbox').css('display', 'none'); 
     		}
-    	}
+    	});
     	
     },
  	
