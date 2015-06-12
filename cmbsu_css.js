@@ -115,7 +115,10 @@ var CMBSU_CSS = {
 		
 		
 		//content
-		document.getElementById('T:hm_pnc2').style.padding = '';
+		if(document.getElementById('T:hm_pnc2') != null) {
+			document.getElementById('T:hm_pnc2').style.padding = '';
+		}
+		
 		
 		document.getElementById('T:contentBody').style.bottom = '-1px';
 		
