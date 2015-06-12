@@ -540,7 +540,9 @@ var CMBSU_CSS = {
     createSearchResults: function() {
     
     	for(var i=0; i<9 ;i++) {
+    		alert(4);
     		if(document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i) != null) {
+    			alert(document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i));
     			document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i).style.display = 'none;'
     		}	
     	}
