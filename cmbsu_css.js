@@ -548,12 +548,15 @@ var CMBSU_CSS = {
     },
     
     hideSearch: function() {
-    	$('.AFBrandingBarTitle').each(function( index ) {
-    		 alert($(this).id);
-    		if($(this).html().indexOf('privat') >-1) {
-    			$('#T:searchbox').css('display', 'none'); 
-    		}
-    	});
+    
+    	
+    	for(var i=0; i<9 ;i++) {
+    		if(document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i) != null) {
+    			document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i).style.display = 'none;'
+    		}	
+    	}
+    		
+  
     	
     },
  	
