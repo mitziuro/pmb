@@ -312,6 +312,9 @@ var CMBSU_CSS = {
 		} else if(type == 2) {
 			div.className= "warning_div";
 			
+		}  else if(type == 3) {
+			div.className= "info_div";
+			
 		}
 		
 		div.innerHTML += '<div class="alert_content">' + content + '</div>';
