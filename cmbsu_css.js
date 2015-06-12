@@ -95,19 +95,24 @@ var CMBSU_CSS = {
 		document.getElementById('T:globalContainer').style.left = '-2px'; 
 		document.getElementById('T:globalContainer').style.paddingLeft = '2px'; 
 		
-		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl1::t'), document.getElementById('T:pgl1').firstChild);    
-		document.getElementById('T:pgl2').style.paddingTop = '114px';
+		if(document.getElementById('T:pgl1') != null){
+			document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl1::t'), document.getElementById('T:pgl1').firstChild);    
+			document.getElementById('T:pgl2').style.paddingTop = '114px';
+			
+			document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl3::t'), document.getElementById('T:wc_psl1::t'));
+			document.getElementById('T:wc_psl3::t').style.top = '65px';
+			document.getElementById('T:wc_psl3::t').className += " div_menu";
+			document.getElementById('T:mb1::oc').style.position = 'relative';
+			document.getElementById('T:mb1::oc').style.top = '2px';
+			
+			document.getElementById('T:wc_psl1::c').style.top  = '-62px'; 
+			
+			document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl369'), document.getElementById('T:wc_psl3::t'));
+			document.getElementById('T:wc_psl369').style.top = '95px';
+		}
 		
-		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl3::t'), document.getElementById('T:wc_psl1::t'));
-		document.getElementById('T:wc_psl3::t').style.top = '65px';
-		document.getElementById('T:wc_psl3::t').className += " div_menu";
-		document.getElementById('T:mb1::oc').style.position = 'relative';
-		document.getElementById('T:mb1::oc').style.top = '2px';
 		
-		document.getElementById('T:wc_psl1::c').style.top  = '-62px'; 
 		
-		document.getElementById('T:pgl1').insertBefore(document.getElementById('T:wc_psl369'), document.getElementById('T:wc_psl3::t'));
-		document.getElementById('T:wc_psl369').style.top = '95px';
 		
 		//content
 		document.getElementById('T:hm_pnc2').style.padding = '';
@@ -531,13 +536,22 @@ var CMBSU_CSS = {
 		
 		
     },
+    
+    createSearchResults: function() {
+    
+    	$( ".x1ys" ).each(function( index ) {
+    		 
+    		if($(this).id.indexOf('T:theTaskFlow') >-1) {
+    			$(this).css('display', 'none');
+    		}
+    	});
+    },
  	
     init: function() {
    
     	$( document ).ready(function() {
     		   
     		    CMBSU_CSS.searchViewer();
-    		
     			CMBSU_CSS.createLayout();
     			CMBSU_CSS.createLayoutIE();
     			CMBSU_CSS.createPageDropEditor();
@@ -548,6 +562,7 @@ var CMBSU_CSS = {
     		
     	});
     	
+    	CMBSU_CSS.createSearchResults();
     	CMBSU_CSS.createFrames();
     	CMBSU_CSS.buildLeftMenu();
     	
