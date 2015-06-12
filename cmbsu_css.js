@@ -539,12 +539,21 @@ var CMBSU_CSS = {
     
     createSearchResults: function() {
     
-    	$( ".x1ys" ).each(function( index ) {
+    	$('.x1ys').each(function( index ) {
     		 
     		if($(this).id.indexOf('T:theTaskFlow') >-1) {
     			$(this).css('display', 'none');
     		}
     	});
+    },
+    
+    hideSearch: function() {
+    	$('.AFBrandingBarTitle').each(function( index ) {
+    		if($(this).html().indexOf('intern') >-1) {
+    			$('#T:searchbox').css('display', 'none'); 
+    		}
+    	}
+    	
     },
  	
     init: function() {
@@ -562,6 +571,7 @@ var CMBSU_CSS = {
     		
     	});
     	
+    	CMBSU_CSS.hideSearch();
     	CMBSU_CSS.createSearchResults();
     	CMBSU_CSS.createFrames();
     	CMBSU_CSS.buildLeftMenu();
