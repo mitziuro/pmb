@@ -553,7 +553,7 @@ var CMBSU_CSS = {
     
     	
     	if(document.getElementById('T:gtbrspmxgl2').innerHTML.indexOf('privat') > -1) {
-    		document.getElementById('T:searchbox').stylle.display = 'none'; 
+    		document.getElementById('T:searchbox').style.display = 'none'; 
     	}
     	
     		
