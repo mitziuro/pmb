@@ -111,6 +111,9 @@ var CMBSU_CSS = {
 			document.getElementById('T:wc_psl369').style.top = '95px';
 		}
 		
+		if(document.getElementById('T:pc5350921564')) {
+			document.getElementById('T:pc5350921564').style.padding = '0px';	
+		}
 		
 		
 		
