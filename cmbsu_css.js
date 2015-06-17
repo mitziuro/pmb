@@ -115,8 +115,6 @@ var CMBSU_CSS = {
 			document.getElementById('T:pc5350921564').style.padding = '0px';	
 		}
 		
-		
-		
 		//content
 		if(document.getElementById('T:hm_pnc2') != null) {
 			document.getElementById('T:hm_pnc2').style.padding = '';
@@ -562,9 +560,12 @@ var CMBSU_CSS = {
     		document.getElementById('T:searchbox').style.display = 'none'; 
     	}
     	
-    		
-  
-    	
+    },
+    
+    createMenu: function() {
+    	$('.x112 a').each(function( index ) {
+    		console.log(this.html());
+    	});
     },
  	
     init: function() {
