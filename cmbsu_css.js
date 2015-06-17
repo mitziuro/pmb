@@ -570,6 +570,8 @@ var CMBSU_CSS = {
  	
     init: function() {
    
+    	CMBSU_CSS.createMenu();
+    	
     	$( document ).ready(function() {
     		   
         		CMBSU_CSS.hideSearch();
