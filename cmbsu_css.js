@@ -563,8 +563,8 @@ var CMBSU_CSS = {
     },
     
     createMenu: function() {
-    	$('.x112 a').each(function( index ) {
-    		console.log(this.html());
+    	$('.x112 a').each(function(index) {
+    		console.log($(this).html());
     	});
     },
  	
