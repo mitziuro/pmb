@@ -136,6 +136,7 @@ var CMBSU_CSS = {
 			document.getElementById('T:pgl2').style.minHeight= '550px';
 			
 		} else {
+			document.getElementById('T:wc_psl3::c').appendchild(document.getElementById('T:pgc1'));
 			document.getElementById('T:pgc1').appendChild(div);
 			
 			document.getElementById('T:pgc1::c').style.position = 'relative';
@@ -145,7 +146,7 @@ var CMBSU_CSS = {
 			document.getElementById('T:contentBody').style.right = '-3px';
 			
 			document.getElementById('T:pgc1').style.position = 'relative';
-			document.getElementById('T:wc_psl3::c').appendchild(document.getElementById('T:pgc1'));
+			
 			
 		}
 		
