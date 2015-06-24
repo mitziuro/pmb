@@ -142,7 +142,7 @@ var CMBSU_CSS = {
 			document.getElementById('T:psl2').style.position = 'relative';
 			
 			document.getElementById('T:contentBody').style.bottom = '-10px';
-			
+			document.getElementById('T:contentBody').style.right = '-3px';
 			
 		}
 		
