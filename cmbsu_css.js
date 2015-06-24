@@ -573,11 +573,11 @@ var CMBSU_CSS = {
 	
 	
 		if(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_9') != null) {
-			document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_9').childNodes[0].style.borderBottom = '0px';	
+			document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_9').childNodes[0].style.borderBottom = '0px solid white';	
 		}
 		
 		if(document.getElementById('T:theTaskFlow:dsr1:pb1j_id_9') != null) {
-			document.getElementById('T:theTaskFlow:dsr1:pb1j_id_9').style.border = '0px';	
+			document.getElementById('T:theTaskFlow:dsr1:pb1j_id_9').style.border = '0px solid white';	
 		}
 
 		
