@@ -561,7 +561,7 @@ var CMBSU_CSS = {
         			document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt').style.display = none;
         		}
     		}catch(ex) {
-    			console.log(ex);
+    			console.log('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt');
     		}
     		
     		
@@ -570,7 +570,7 @@ var CMBSU_CSS = {
 	    			document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:ssresfi2').style.display = none;
 	    		}
     		}catch(ex) {
-    			console.log(ex);
+    			console.log('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:ssresfi2');
     		}
     		
     		try{
@@ -578,7 +578,7 @@ var CMBSU_CSS = {
 	    			document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:pglln2').style.display = none;
 	    		}
     		}catch(ex) {
-    			console.log(ex);
+    			console.log('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:pglln2');
     		}
     	}
     	
