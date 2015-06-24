@@ -198,7 +198,8 @@ var CMBSU_CSS = {
 	   </table></div>';
 	
 		if(document.getElementById('T:pgl1') == null) {
-			document.getElementById('T:wc_psl3::c').appendchild(document.getElementById('T:pgc1'));
+			document.getElementById('T:decBoxMed').appendchild(document.getElementById('T:pgc1'));
+			
 		} else {
 			document.getElementById('f1').insertBefore(document.getElementById('T:pgl1'), document.getElementById('f1').firstChild);    
 			document.getElementById('f1').removeChild(document.getElementById('T:globalContainer'));
