@@ -136,7 +136,7 @@ var CMBSU_CSS = {
 			document.getElementById('T:pgl2').style.minHeight= '550px';
 			
 		} else {
-			document.getElementById('T:wc_psl3::c').appendchild(document.getElementById('T:pgc1'));
+	
 			document.getElementById('T:pgc1').appendChild(div);
 			
 			document.getElementById('T:pgc1::c').style.position = 'relative';
@@ -197,10 +197,16 @@ var CMBSU_CSS = {
 	        </tr>\
 	   </table></div>';
 	
-		document.getElementById('f1').insertBefore(document.getElementById('T:pgl1'), document.getElementById('f1').firstChild);    
-		document.getElementById('f1').removeChild(document.getElementById('T:globalContainer'));
-		document.getElementById('T:pgl1').style.overflow = '';
-		document.getElementById('T:wc_psl369').style.height = '10px';
+		if(document.getElementById('T:pgl1') == null) {
+			document.getElementById('T:wc_psl3::c').appendchild(document.getElementById('T:pgc1'));
+		} else {
+			document.getElementById('f1').insertBefore(document.getElementById('T:pgl1'), document.getElementById('f1').firstChild);    
+			document.getElementById('f1').removeChild(document.getElementById('T:globalContainer'));
+			document.getElementById('T:pgl1').style.overflow = '';
+			document.getElementById('T:wc_psl369').style.height = '10px';
+		}
+		
+		
 	
 		
 	},
