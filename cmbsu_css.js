@@ -137,6 +137,11 @@ var CMBSU_CSS = {
 			
 		} else {
 			document.getElementById('T:pgc1').appendChild(div);
+			
+			document.getElementById('T:pgc1::c').style.position = 'relative';
+			document.getElementById('T:psl2').style.position = 'relative';
+			
+			
 		}
 		
 		
