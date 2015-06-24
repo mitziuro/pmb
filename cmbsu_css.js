@@ -547,6 +547,7 @@ var CMBSU_CSS = {
     createSearchResults: function() {
     
     	if(document.getElementById('T:theTaskFlow:dsr1:spkwpgl1') == null) {
+    		alert(5);
     		return;
     	}
     	
