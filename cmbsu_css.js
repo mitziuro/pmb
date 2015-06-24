@@ -550,7 +550,7 @@ var CMBSU_CSS = {
     		return;
     	}
     	
-    	for(var i=0; i<9 ;i++) {
+    	for(var i=0; i<=9 ;i++) {
     		if(document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i) != null) {
     			document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i).style.display = 'none'
     		}	
