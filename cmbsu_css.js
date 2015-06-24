@@ -136,7 +136,7 @@ var CMBSU_CSS = {
 			document.getElementById('T:pgl2').style.minHeight= '550px';
 			
 		} else {
-			//document.getElementById('T:spacer1').appendChild(div); 
+			document.getElementById('T:decBoxMed').appendChild(div);
 		}
 		
 		
