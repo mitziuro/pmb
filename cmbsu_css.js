@@ -588,6 +588,8 @@ var CMBSU_CSS = {
 				document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:pglln2').style.display = 'none';
 				
 			}
+			
+			i++;
 		}
 		
 		
