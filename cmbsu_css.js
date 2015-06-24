@@ -567,7 +567,7 @@ var CMBSU_CSS = {
 
     	}
     	
-    	try{
+    	setTimeout(function(){ try{
 			if(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt') != null) {
     			document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt').style.display = none;
     			alert(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt'));
@@ -593,7 +593,8 @@ var CMBSU_CSS = {
     		}
 		}catch(ex) {
 			console.log(ex);
-		}
+		} }, 3000);
+    	
 		
     	if(document.getElementById('T:theTaskFlow:dsr1:spkwpgl1') != null) {
     		document.getElementById('T:theTaskFlow:dsr1:spkwpgl1').style.display = 'none'; 
