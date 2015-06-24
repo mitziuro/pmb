@@ -573,16 +573,23 @@ var CMBSU_CSS = {
 	
 	
 
-		if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:0:ddc1:ssresfi2') != null) {
-			document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:0:ddc1:ssresfi2').style.display = 'none';
-		}
-	
-	
-	
-		if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:0:ddc1:pglln2') != null) {
-			document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:0:ddc1:pglln2').style.display = 'none';
+		i=0;
+		
+		while(true) {
 			
+			if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:ssresfi2') != null) {
+				document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:ssresfi2').style.display = 'none';
+			} else {
+				break;
+			}
+		
+
+			if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:pglln2') != null) {
+				document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:pglln2').style.display = 'none';
+				
+			}
 		}
+		
 		
     	if(document.getElementById('T:theTaskFlow:dsr1:spkwpgl1') != null) {
     		document.getElementById('T:theTaskFlow:dsr1:spkwpgl1').style.display = 'none'; 
