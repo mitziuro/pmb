@@ -567,10 +567,11 @@ var CMBSU_CSS = {
 
     	}
     	
-    	setTimeout(function(){ try{
+    	try{
+    		alert(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt'));
 			if(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt') != null) {
     			document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt').style.display = none;
-    			alert(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt'));
+    			
     		}
 		}catch(ex) {
 			console.log(ex);
@@ -578,23 +579,24 @@ var CMBSU_CSS = {
 		
 		
 		try{
+			alert(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:ssresfi2'));
     		if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:ssresfi2') != null) {
     			document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:ssresfi2').style.display = none;
-    			alert(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:ssresfi2'));
+    			
     		}
 		}catch(ex) {
 			console.log(ex);
 		}
 		
 		try{
+			alert(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:pglln2'));
     		if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:pglln2') != null) {
     			document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:pglln2').style.display = none;
-    			alert(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:pglln2'));
+    			
     		}
 		}catch(ex) {
 			console.log(ex);
-		} }, 3000);
-    	
+		}
 		
     	if(document.getElementById('T:theTaskFlow:dsr1:spkwpgl1') != null) {
     		document.getElementById('T:theTaskFlow:dsr1:spkwpgl1').style.display = 'none'; 
