@@ -129,9 +129,18 @@ var CMBSU_CSS = {
 		
 		//footer
 		var div = document.createElement("div");
-		document.getElementById('T:pgl1').appendChild(div);
 		
-		document.getElementById('T:pgl2').style.minHeight= '550px';
+		if(document.getElementById('T:pgl1') != null) {
+			document.getElementById('T:pgl1').appendChild(div);
+			
+			document.getElementById('T:pgl2').style.minHeight= '550px';
+			
+		} else {
+			document.getElementById('T:spacer1').appendChild(div); 
+		}
+		
+		
+		
 		
 		//footer copyright
 		var footer = document.getElementById('T:pt_pgl9').firstChild.firstChild.firstChild.firstChild.innerHTML;
