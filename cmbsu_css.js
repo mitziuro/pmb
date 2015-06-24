@@ -599,8 +599,8 @@ var CMBSU_CSS = {
 			
 			//we change the page's name
 			if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:ssresfcl2') != null) {
-				document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:ssresfcl2').style.textDecoration = 'none !important';
-				document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:ssresfcl2').style.color = '#005391';  
+				document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:ssresfcl2').style.textDecoration = 'none';
+				document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:ssresfcl2').childNodes[0].style.color = '#005391';  
 				document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:ssresfcl2').childNodes[0].innerHTML = document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_9:' + i + ':ddc1:ssresfcl2').childNodes[0].innerHTML.split('-')[1];
 				
 			}
