@@ -141,6 +141,8 @@ var CMBSU_CSS = {
 			document.getElementById('T:pgc1::c').style.position = 'relative';
 			document.getElementById('T:psl2').style.position = 'relative';
 			
+			document.getElementById('T:contentBody').style.bottom = '-10px';
+			
 			
 		}
 		
