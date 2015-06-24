@@ -562,7 +562,7 @@ var CMBSU_CSS = {
     	var i=0;
     	for(; i<9 ;i++) {
     		if(document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i) != null) {
-    			document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i).style.display = 'none'
+    			document.getElementById('T:theTaskFlow:dsr1:pb1j_id_' + i).style.display = 'none';
     		}	
 
     	}
@@ -580,6 +580,10 @@ var CMBSU_CSS = {
 			document.getElementById('T:theTaskFlow:dsr1:pb1j_id_9').style.border = '0px solid white';	
 		}
 
+		if(document.getElementById('T:theTaskFlow:dsr1:b10367603') != null) {
+			document.getElementById('T:theTaskFlow:dsr1:b10367603').style.display = 'none';	
+		}
+		
 		
 		i=0;
 		
