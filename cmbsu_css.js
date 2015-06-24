@@ -557,18 +557,24 @@ var CMBSU_CSS = {
     		}	
     		
     		
-    		if(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt') != null) {
-    			$('#T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt').css('display', 'none');
-    		}
+    		try{
+    			if(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt') != null) {
+        			document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt').style.display = none;
+        		}
+    		}catch(ex) {}
     		
-    		if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:ssresfi2') != null) {
-    			document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:ssresfi2').style.display = none;
-    		}
     		
-    		if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:pglln2') != null) {
-    			document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:pglln2').style.display = none;
-    		}
-  
+    		try{
+	    		if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:ssresfi2') != null) {
+	    			document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:ssresfi2').style.display = none;
+	    		}
+    		}catch(ex) {}
+    		
+    		try{
+	    		if(document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:pglln2') != null) {
+	    			document.getElementById('T:theTaskFlow:dsr1:ssresi1j_id_' + i + ':0:ddc1:pglln2').style.display = none;
+	    		}
+    		}catch(ex) {}
     	}
     	
     	if(document.getElementById('T:theTaskFlow:dsr1:spkwpgl1') != null) {
