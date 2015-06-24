@@ -568,10 +568,8 @@ var CMBSU_CSS = {
     	}
     	
     	try{
-    		alert(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt'));
-			if(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt') != null) {
-    			document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_' + i + '::_afrTtxt').style.display = none;
-    			
+			if(document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_9::_afrTtxt') != null) {
+    			document.getElementById('T:theTaskFlow:dsr1:ssresfph1j_id_9::_afrTtxt').childNodes[0].style.display = 'none';	
     		}
 		}catch(ex) {
 			console.log(ex);
