@@ -667,10 +667,10 @@ var CMBSU_CSS = {
     },
     
     buildMenu: function(tree) {
-    	var html = '<div>';
+    	var html = '<div class="menu_first_level">';
     	for(var i in tree) {
     		if(tree[i] == null) {
-    			html += '<div>' + i + '</div>';
+    			html += '<div class="menu_first_level_element">' + i + '</div>';
     		}
     	}
     	
