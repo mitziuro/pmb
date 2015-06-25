@@ -674,6 +674,11 @@ var CMBSU_CSS = {
     		}
     	}
     	
+    	html += '<div class="menu_logo">';
+    	html += '<img id="menu_logo_image" src="' + CMBSU_URL + 'sigla%20-%20PMB.gif"/>'; 
+    	html += '<div class="menu_logo_text">' + document.getElementById('T:gtbrspmxgl2').childNodes[0].innerHTML + '</div>';
+    	html += '</div>';
+    	
     	html += '</div>';
     	
     	var div = document.createElement('div');
