@@ -532,7 +532,7 @@ var CMBSU_CSS = {
 	        	if(data.org != null && data.org != 'null') {
 	        		div_nume.innerHTML += '<div class="firstName_DIV">' + data.firstName + '</div>';
 	        		div_nume.innerHTML += '<div class="lastName_DIV">' + data.lastName + '</div>';
-	        		div_nume.innerHTML += '<div class="orgName_DIV">' + data.org + '</div>';
+	        		div_nume.innerHTML += '<div class="orgName_DIV">C.U.I: ' + data.org + '</div>';
 	        		
 	        		var a = document.createElement("a");
 	        		a.href = '/webcenter/portal/system/Profile';
