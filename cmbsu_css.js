@@ -656,14 +656,30 @@ var CMBSU_CSS = {
     },
     
     createMenu: function() {
+    	
+    	var tree = {};
+    	
     	$('.x112 a').each(function(index) {
-    		console.log($(this).html());
+    		tree[$(this).html()] = null;
     	});
+    	
+    	return tree;
     },
     
     buildMenu: function(tree) {
+    	var html = '<div>';
+    	for(var i in tree) {
+    		if(tree[i] == null) {
+    			
+    		}
+    	}
     	
-    	//for()
+    	html += '</div>';
+    	
+    	var div = document.createElement('div');
+    	div.innerHTML = html;
+    	
+    	document.getElementById('T:pgl2').appendChild(div);
     },
     
     buildMobile: function() {
@@ -677,13 +693,12 @@ var CMBSU_CSS = {
     		return;
     	}
     	
-    	alert(2);
+    	//alert(2);
     },
  	
     init: function() {
    
-    	CMBSU_CSS.createMenu();
-    	CMBSU_CSS.buildMobile();
+    	CMBSU_CSS.buildMenu(CMBSU_CSS.createMenu());
     	
     	$( document ).ready(function() {
     		   
