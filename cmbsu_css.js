@@ -661,7 +661,7 @@ var CMBSU_CSS = {
     	$('.x11o').each(function(index) {
     	//alert($(this).parent().html());
     	//alert($(this).parent().id);
-    		tree[$(this).parent().id.split(':')[2]].children.push({'name' : $(this).html(), children: []});
+    		//tree[$(this).parent().id.split(':')[2]].children.push({'name' : $(this).html(), children: []});
     	});
     	
     	
