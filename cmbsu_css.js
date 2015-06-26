@@ -659,10 +659,19 @@ var CMBSU_CSS = {
     	
     	var tree = {};
     	
+    	
+    	
     	$('.x112 a').each(function(index) {
-    		tree[$(this).html()] = null;
+    		tree[index] = {'name' : $(this).html(), children: []};
     	});
     	
+    	$('.x11o').each(function(index) {
+    		if(tree[$(this).parent()])
+    		tree[$(this).parent().id.split(':')[2]].children.push({'name' : $(this).html(), children: []});
+    	});
+    	
+    	
+    	console.log(tree);
     	return tree;
     },
     
@@ -670,7 +679,7 @@ var CMBSU_CSS = {
     	var html = '<div class="menu_first_level">';
     	for(var i in tree) {
     		if(tree[i] == null) {
-    			html += '<div class="menu_first_level_element">' + i + '</div>';
+    			html += '<div class="menu_first_level_element">' + tree[i].name + '</div>';
     		}
     	}
     	
@@ -703,7 +712,9 @@ var CMBSU_CSS = {
  	
     init: function() {
    
-    	CMBSU_CSS.buildMenu(CMBSU_CSS.createMenu());
+    	
+    	CMBSU_CSS.createMenu();
+    	//CMBSU_CSS.buildMenu(CMBSU_CSS.createMenu());
     	
     	$( document ).ready(function() {
     		   
