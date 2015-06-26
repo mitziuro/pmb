@@ -659,7 +659,7 @@ var CMBSU_CSS = {
     	});
     	
     	$('.x11o').each(function(index) {
-    		if(tree[$(this).parent()])
+    	
     			console.log($(this).parent().id.split(':')[2]);
     		tree[$(this).parent().id.split(':')[2]].children.push({'name' : $(this).html(), children: []});
     	});
